@@ -1,0 +1,1050 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="AsciiDoc 7.0.2">
+<style type="text/css">
+/* Debug borders */
+p, li, dt, dd, div, pre, h1, h2, h3, h4, h5, h6 {
+/*
+  border: 1px solid red;
+*/
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a { color: blue; }
+a:visited { color: fuchsia; }
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+tt {
+  color: navy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  font-family: sans-serif;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  border-bottom: 2px solid silver;
+  padding-top: 0.5em;
+}
+
+div.sectionbody {
+  font-family: serif;
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+span#author {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+span#email {
+}
+span#revision {
+  font-family: sans-serif;
+}
+
+div#footer {
+  font-family: sans-serif;
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+div#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+div#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+div#preamble,
+div.tableblock, div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-right: 10%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+
+div.listingblock > div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock > div.content {
+  padding-left: 2.0em;
+}
+div.quoteblock .attribution {
+  text-align: right;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 2px solid silver;
+}
+
+div.exampleblock > div.content {
+  border-left: 2px solid silver;
+  padding: 0.5em;
+}
+
+div.verseblock div.content {
+  white-space: pre;
+}
+
+div.imageblock div.content { padding-left: 0; }
+div.imageblock img { border: 1px solid silver; }
+span.image img { border-style: none; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: italic;
+}
+dd > *:first-child {
+  margin-top: 0;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+ol.olist2 {
+  list-style-type: lower-alpha;
+}
+
+div.tableblock > table {
+  border-color: #527bbd;
+  border-width: 3px;
+}
+thead {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+tfoot {
+  font-weight: bold;
+}
+
+div.hlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+td.hlist1 {
+  vertical-align: top;
+  font-style: italic;
+  padding-right: 0.8em;
+}
+td.hlist2 {
+  vertical-align: top;
+}
+
+@media print {
+  div#footer-badges { display: none; }
+}
+/* Workarounds for IE6's broken and incomplete CSS2. */
+
+div.sidebar-content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+div.sidebar-title, div.image-title {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 0.0em;
+  margin-bottom: 0.5em;
+}
+
+div.listingblock div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock-content {
+  padding-left: 2.0em;
+}
+
+div.exampleblock-content {
+  border-left: 2px solid silver;
+  padding-left: 0.5em;
+}
+</style><title>Everyday GIT With 20 Commands Or So</title></head><body>
+<div id="header">
+<h1>Everyday GIT With 20 Commands Or So</h1>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<p>De comenzile <a href="#Basic%20Repository">[Basic Repository]</a> se folosesc oamenii care deţin un repozitoriu
+ --- ceea ce înseamnă toţi, deoarece fiecare ramificare al 
+git este un repozitoriu.</p>
+<p>în afară de aceasta, sînt esenţiale comenzile <a href="#Individual%20Developer%20%28Standalone%29">[Individual Developer (Standalone)]</a>
+pentru oricine care face un commit(transmitere), chiar şi pentru cineva care lucrează singur.</p>
+<p>Dacă lucraţi cu alţii oameni, veţi avea nevoie de comenzi care sint listate deasemenea in secţiunea <a href="#Individual%20Developer%20%28Participant%29">[Individual Developer (Participant)]</a>.</p>
+<p>Oamenii care joacă rolul <a href="#Integrator">[Integrator]</a>-ului au nevoie să înveţe cîteva comenzi
+ în plus la cele de mai sus.</p>
+<p>Comenzile<a href="#Repository%20Administration">[Repository Administration]</a> sînt pentru administratorii 
+de sistemă care sînt responsabili pentru păstrarea şi transmiterea
+repozitoriilor git.</p>
+</div>
+</div>
+<h2>Basic Repository<a id="Basic Repository"></a></h2>
+<div class="sectionbody">
+<p>Toţi folosesc această comandă pentru a deservi repozitoriile git.</p>
+<ul>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-init.html">git-init(1)</a> sau <a href="http://www.kernel.org/pub/software/scm/git/docs/git-clone.html">git-clone(1)</a> pentru a crea un
+repozitoriu nou.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-fsck.html">git-fsck(1)</a> pentru a căuta repozitoriu dacă conţine erori.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-gc.html">git-gc(1)</a> pentru a face lucrul obişnuit cum ar fi
+    reîmpachetarea şi micşorarea.
+</p>
+</li>
+</ul>
+<h3>Exemple</h3>
+<dl>
+<dt>
+Check health and remove cruft.
+</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre><tt>$ git fsck <b>(1)</b>
+$ git count-objects <b>(2)</b>
+$ git gc <b>(3)</b></tt></pre>
+</div></div>
+<ol>
+<li>
+<p>
+rulînd fără <tt>--full</tt> este deobicei mai ieftin şi asigură
+repozitorului "sănătate" destul de bună.
+</p>
+</li>
+<li>
+<p>
+vedeţi acum cîte obiecte libere sînt şi cît
+spaţiu pe disc este pierdut fără reîmpachetare.
+</p>
+</li>
+<li>
+<p>
+reîmpachetează repozitoriul local şi rulează alte funcţii de rutină. Rulînd
+fără <tt>--prune</tt> este o operaţiă sigură chiar altele sînt derulare.
+</p>
+</li>
+</ol>
+</dd>
+<dt>
+Reîmpachetează un mic proiect intr-un singur pachet.
+</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre><tt>$ git gc <b>(1)</b>
+$ git gc --prune</tt></pre>
+</div></div>
+<ol>
+<li>
+<p>
+împachetează toate obiectele disponibile din refs intr-un singur pachet,
+apoi şterge alte pachete.
+</p>
+</li>
+</ol>
+</dd>
+</dl>
+</div>
+<h2>Individual Developer (Standalone)<a id="Individual Developer (Standalone)"></a></h2>
+<div class="sectionbody">
+<p>Un developer individual nu face schimb de patch-uri cu 
+alţii, şi lucrează singur într-un singur repozitoriu, folosind 
+următoarele comenzi.</p>
+<ul>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-show-branch.html">git-show-branch(1)</a> pentru a vedea unde vă aflaţi.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-log.html">git-log(1)</a> pentru a vedea ce s-a întîmplat.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-checkout.html">git-checkout(1)</a> şi <a href="http://www.kernel.org/pub/software/scm/git/docs/git-branch.html">git-branch(1)</a> pentru a schimba
+    ramificarea.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-add.html">git-add(1)</a> pentru a lucra cu file-ul index.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-diff.html">git-diff(1)</a> şi <a href="http://www.kernel.org/pub/software/scm/git/docs/git-status.html">git-status(1)</a> pentru a vedea
+    în ce punct vă aflaţi cu lucrul.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-commit.html">git-commit(1)</a> pentru a vă muta la ramura curentă.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-reset.html">git-reset(1)</a> şi <a href="http://www.kernel.org/pub/software/scm/git/docs/git-checkout.html">git-checkout(1)</a> (cu
+    parametrii căii de acces) pentru a anula schimbările.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-merge.html">git-merge(1)</a> pentru a uni între ramuri locale.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-rebase.html">git-rebase(1)</a> pentru a deservi ramurile temei.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-tag.html">git-tag(1)</a> pentru a marca punct cunoscut.
+</p>
+</li>
+</ul>
+<h3>Exemple</h3>
+<dl>
+<dt>
+Folosiţi tarball ca punct de start pentru un repozitoriu nou.
+</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre><tt>$ tar zxf frotz.tar.gz
+$ cd frotz
+$ git-init
+$ git add . <b>(1)</b>
+$ git commit -m "importă copacul sursă al frotz."
+$ git tag v2.43 <b>(2)</b></tt></pre>
+</div></div>
+<ol>
+<li>
+<p>
+adăugaţi totul sub directoria curenta.
+</p>
+</li>
+<li>
+<p>
+faceţi un lightweight, tagurilor neanotate.
+</p>
+</li>
+</ol>
+</dd>
+<dt>
+Creaţi o ramura a topic-ului şi dezvoltaţi.
+</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre><tt>$ git checkout -b alsa-audio <b>(1)</b>
+$ edit/compile/test
+$ git checkout -- curses/ux_audio_oss.c <b>(2)</b>
+$ git add curses/ux_audio_alsa.c <b>(3)</b>
+$ edit/compile/test
+$ git diff HEAD <b>(4)</b>
+$ git commit -a -s <b>(5)</b>
+$ edit/compile/test
+$ git reset --soft HEAD^ <b>(6)</b>
+$ edit/compile/test
+$ git diff ORIG_HEAD <b>(7)</b>
+$ git commit -a -c ORIG_HEAD <b>(8)</b>
+$ git checkout master <b>(9)</b>
+$ git merge alsa-audio <b>(10)</b>
+$ git log --since='3 days ago' <b>(11)</b>
+$ git log v2.43.. curses/ <b>(12)</b></tt></pre>
+</div></div>
+<ol>
+<li>
+<p>
+crează o ramură nouă a topicului.
+</p>
+</li>
+<li>
+<p>
+intoarceţi schimbările voastre stricate in <tt>curses/ux_audio_oss.c</tt>.
+</p>
+</li>
+<li>
+<p>
+trebuie să spuneţi git-ului dacă aţi adaugat un file nou; ştergerile şi
+modificările vor fi inregistrate dacă rulaţi comanda <tt>git commit -a</tt> mai tîrziu.
+</p>
+</li>
+<li>
+<p>
+ca să vedeţi ce schimbări trimiteţi.
+</p>
+</li>
+<li>
+<p>
+trimiteţi orice ce voi aţi testat spre sfîrşit.
+</p>
+</li>
+<li>
+<p>
+luaţi ultima trimitere înapoi, lăsînd ce este în ramificarea lucrătoare.
+</p>
+</li>
+<li>
+<p>
+look at the changes since the premature commit we took back.
+</p>
+</li>
+<li>
+<p>
+refaceţi commit-ul distrus înainte, folosind mesajul
+care l-aţi scris iniţial.
+</p>
+</li>
+<li>
+<p>
+schimbaţi la ramura principală.
+</p>
+</li>
+<li>
+<p>
+adaugaţi o ramură topic ramura DVS principală.
+</p>
+</li>
+<li>
+<p>
+revedeţi log-urile trmiterilor (commit); other forms to limit output can be
+combined and include <tt>--max-count=10</tt> (show 10 commits),
+<tt>--until=2005-12-10</tt>, etc.
+</p>
+</li>
+<li>
+<p>
+vedeţi numai schimbările care au atins ce e în directoriul<tt>curses/</tt>,
+de la <tt>v2.43</tt>.
+</p>
+</li>
+</ol>
+</dd>
+</dl>
+</div>
+<h2>Developer Individual (Participant)<a id="Individual Developer (Participant)"></a></h2>
+<div class="sectionbody">
+<p>Un developer lucrînd ca  participant într-un grup al unui proiect trebuie
+să înveţe cum să comunice cu alţii, şi foloseşte aceste comenzi în
+adăugare la cele necesare unui developer desinestătător.</p>
+<ul>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-clone.html">git-clone(1)</a> menţinînd fluxul către principalul
+    repozitoriu.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-pull.html">git-pull(1)</a> and <a href="http://www.kernel.org/pub/software/scm/git/docs/git-fetch.html">git-fetch(1)</a> de la "origine"
+    pentru a menţine la curent cu un flux.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-push.html">git-push(1)</a> to shared repository, if you adopt CVS
+    style shared repository workflow.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-format-patch.html">git-format-patch(1)</a> to prepare e-mail submission, if
+    you adopt Linux kernel-style public forum workflow.
+</p>
+</li>
+</ul>
+<h3>Exemple</h3>
+<dl>
+<dt>
+Clone the upstream and work on it.  Feed changes to upstream.
+</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre><tt>$ git clone git://git.kernel.org/pub/scm/.../torvalds/linux-2.6 my2.6
+$ cd my2.6
+$ edit/compile/test; git commit -a -s <b>(1)</b>
+$ git format-patch origin <b>(2)</b>
+$ git pull <b>(3)</b>
+$ git log -p ORIG_HEAD.. arch/i386 include/asm-i386 <b>(4)</b>
+$ git pull git://git.kernel.org/pub/.../jgarzik/libata-dev.git ALL <b>(5)</b>
+$ git reset --hard ORIG_HEAD <b>(6)</b>
+$ git gc --prune <b>(7)</b>
+$ git fetch --tags <b>(8)</b></tt></pre>
+</div></div>
+<ol>
+<li>
+<p>
+repetaţi in caz că e nevoie.
+</p>
+</li>
+<li>
+<p>
+extrageţi patch-uri din ramura DVS pentru submisii e-mail.
+</p>
+</li>
+<li>
+<p>
+<tt>git pull</tt> întărire de la <tt>origine</tt> implicit şi uneşte în
+ramura curentă.
+</p>
+</li>
+<li>
+<p>
+imediat după scoatere, vedeţi schimbările făcute upstream
+începînd cu ultima data cînd aţi verificat, numai în
+zona de care suntem interesaţi.
+</p>
+</li>
+<li>
+<p>
+aduce dintr-o ramură anume a unui anume repozitoriu şi uneşte.
+</p>
+</li>
+<li>
+<p>
+reîntoarce scoaterea.
+</p>
+</li>
+<li>
+<p>
+garbage collect leftover objects from reverted pull.
+</p>
+</li>
+<li>
+<p>
+din cînd în cînd, scoateţi tag-uri oficiale de la <tt>origine</tt>
+şi salvaţi-le sub <tt>.git/refs/tags/</tt>.
+</p>
+</li>
+</ol>
+</dd>
+<dt>
+Ä‚Ĺ˝mpingeţi în alt repozitoriu.
+</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre><tt>satellite$ git clone mothership:frotz frotz <b>(1)</b>
+satellite$ cd frotz
+satellite$ git config --get-regexp '^(remote|branch)\.' <b>(2)</b>
+remote.origin.url mothership:frotz
+remote.origin.fetch refs/heads/*:refs/remotes/origin/*
+branch.master.remote origin
+branch.master.merge refs/heads/master
+satellite$ git config remote.origin.push \
+           master:refs/remotes/satellite/master <b>(3)</b>
+satellite$ edit/compile/test/commit
+satellite$ git push origin <b>(4)</b>
+
+mothership$ cd frotz
+mothership$ git checkout master
+mothership$ git merge satellite/master <b>(5)</b></tt></pre>
+</div></div>
+<ol>
+<li>
+<p>
+maşina mothership are un repozitoriu frotz în directoriul DVS home;
+clonaţi din ea pentru a porni un repozitoriu pe satelite maşina
+satelite.
+</p>
+</li>
+<li>
+<p>
+clonarea setează aceste configurări ale variabilelor implicit(by default).
+Aranjază <tt>git pull</tt> pentru a aduce şi păstra în ramura maşinii mothership
+în ramurile locale  <tt>remotes/origin/*</tt> de urmărire.
+</p>
+</li>
+<li>
+<p>
+aranjază <tt>git push</tt> pentru a împinge ramura locală <tt>master</tt> în
+<tt>remotes/satellite/master</tt> ramura maşinii mothership.
+</p>
+</li>
+<li>
+<p>
+împingerea v-a ascunde lucrul nostru pe ramura <tt>remotes/satellite/master</tt>
+de urmărire pe maşina mothership.  Aţi putea folosi aceasta ca o metodă back-up.
+</p>
+</li>
+<li>
+<p>
+pe maşina mothership, fuzionaţi lucrul terminat pe satelit
+în ramura master.
+</p>
+</li>
+</ol>
+</dd>
+<dt>
+Ramura unui tag specific.
+</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre><tt>$ git checkout -b private2.6.14 v2.6.14 <b>(1)</b>
+$ edit/compile/test; git commit -a
+$ git checkout master
+$ git format-patch -k -m --stdout v2.6.14..private2.6.14 |
+  git am -3 -k <b>(2)</b></tt></pre>
+</div></div>
+<ol>
+<li>
+<p>
+crează o ramură privată bazată pe bine cunoscutul
+tag.
+</p>
+</li>
+<li>
+<p>
+forward port toate schimbările din ramura <tt>private2.6.14</tt>, în ramura <tt>master</tt>
+fără o "fuziune" formală.
+</p>
+</li>
+</ol>
+</dd>
+</dl>
+</div>
+<h2>Integrator<a id="Integrator"></a></h2>
+<div class="sectionbody">
+<p>O persoană activează ca integrator într-un proiect
+şi primeşte schimbările făcute de alţii, le revede şi integrează
+şi publică rezultatul pentru alţii pentru folosire, folosid aceste
+comenzi împreună cu acele ce sînt cerute de alţi participanţi.</p>
+<ul>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-am.html">git-am(1)</a> pentru a aplica patch-uri trimise prin e-mail
+   de la contributori.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-pull.html">git-pull(1)</a> to merge from your trusted lieutenants.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-format-patch.html">git-format-patch(1)</a> to prepare and send suggested
+    alternative to contributors.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-revert.html">git-revert(1)</a> to undo botched commits.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-push.html">git-push(1)</a> to publish the bleeding edge.
+</p>
+</li>
+</ul>
+<h3>Examples</h3>
+<dl>
+<dt>
+My typical GIT day.
+</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre><tt>$ git status <b>(1)</b>
+$ git show-branch <b>(2)</b>
+$ mailx <b>(3)</b>
+&amp; s 2 3 4 5 ./+to-apply
+&amp; s 7 8 ./+hold-linus
+&amp; q
+$ git checkout -b topic/one master
+$ git am -3 -i -s -u ./+to-apply <b>(4)</b>
+$ compile/test
+$ git checkout -b hold/linus &amp;&amp; git am -3 -i -s -u ./+hold-linus <b>(5)</b>
+$ git checkout topic/one &amp;&amp; git rebase master <b>(6)</b>
+$ git checkout pu &amp;&amp; git reset --hard next <b>(7)</b>
+$ git merge topic/one topic/two &amp;&amp; git merge hold/linus <b>(8)</b>
+$ git checkout maint
+$ git cherry-pick master~4 <b>(9)</b>
+$ compile/test
+$ git tag -s -m "GIT 0.99.9x" v0.99.9x <b>(10)</b>
+$ git fetch ko &amp;&amp; git show-branch master maint 'tags/ko-*' <b>(11)</b>
+$ git push ko <b>(12)</b>
+$ git push ko v0.99.9x <b>(13)</b></tt></pre>
+</div></div>
+<ol>
+<li>
+<p>
+vezi ce făceam eu, dacă făceam ceva.
+</p>
+</li>
+<li>
+<p>
+vezi ce ramuri topic am eu şi cît de pregătite sunt ele.
+</p>
+</li>
+<li>
+<p>
+citeşte mail-uri, salvează cele ce sunt aplicabile, şi salvează altele 
+care nu sînt chiar pregătite.
+</p>
+</li>
+<li>
+<p>
+aplică-le, interactiv, cu sign-offs.
+</p>
+</li>
+<li>
+<p>
+crează ramură topic cum se cere şi aplică, iarăşi cu sign-offs.
+</p>
+</li>
+<li>
+<p>
+rebase internal topic branch care nu a fost fuzionată cu ramura
+master, sau expuse ca parte a unei ramure stabile.
+</p>
+</li>
+<li>
+<p>
+restart <tt>pu</tt> de fiecare dată de la următorul.
+</p>
+</li>
+<li>
+<p>
+şi teancul de ramuri topic încă în gătire.
+</p>
+</li>
+<li>
+<p>
+backport a critical fix.
+</p>
+</li>
+<li>
+<p>
+create a signed tag.
+</p>
+</li>
+<li>
+<p>
+mă asigur că nu am întors accidental ramura master dincolo de ce deja 
+am împins pe GIT.  <tt>ko</tt> stenografiază punctele în repozitoriul meu
+la kernel.org, şi arată cam aşa:
+</p>
+<div class="listingblock">
+<div class="content">
+<pre><tt>$ cat .git/remotes/ko
+URL: kernel.org:/pub/scm/git/git.git
+Pull: master:refs/tags/ko-master
+Pull: next:refs/tags/ko-next
+Pull: maint:refs/tags/ko-maint
+Push: master
+Push: next
+Push: +pu
+Push: maint</tt></pre>
+</div></div>
+<p>Spre afişare din <tt>git show-branch</tt>, <tt>master</tt> ar trebui să aibă
+orice <tt>ko-master</tt> are, şi <tt>next</tt> ar trebui să aibă
+orice <tt>ko-next</tt> are.</p>
+</li>
+<li>
+<p>
+push out the bleeding edge.
+</p>
+</li>
+<li>
+<p>
+push the tag out, too.
+</p>
+</li>
+</ol>
+</dd>
+</dl>
+</div>
+<h2>Repository Administration<a id="Repository Administration"></a></h2>
+<div class="sectionbody">
+<p>Administrator al repozitoriului foloseşte urmăatoarele unelte pentru a seta
+şi a menţine accesul la repozitoriu de către developeri.</p>
+<ul>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-daemon.html">git-daemon(1)</a> pentru a lăsa anonimii să descarce din
+    repozitoriu.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-shell.html">git-shell(1)</a> poate fi folosit ca <em>restricted login shell</em>
+    pentru a împărţi repozitoriul central cu alţi utilizatori.
+</p>
+</li>
+</ul>
+<p><a href="http://www.kernel.org/pub/software/scm/git/docs/howto/update-hook-example.txt">update hook howto</a> are un bun 
+exemplu de a conduce un repozitoriu central.</p>
+<h3>Example</h3>
+<dl>
+<dt>
+Noi presupunem următoarele în /etc/services
+</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre><tt>$ grep 9418 /etc/services
+git             9418/tcp                # Git Version Control System</tt></pre>
+</div></div>
+</dd>
+<dt>
+Rulaţi git-daemon pentru serivrea /pub/scm from inetd.
+</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre><tt>$ grep git /etc/inetd.conf
+git     stream  tcp     nowait  nobody \
+  /usr/bin/git-daemon git-daemon --inetd --export-all /pub/scm</tt></pre>
+</div></div>
+<p>Linia actuală de configurare ar trebui să fie una.</p>
+</dd>
+<dt>
+Rulaţi git-daemon pentru servirea /pub/scm din xinetd.
+</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre><tt>$ cat /etc/xinetd.d/git-daemon
+# default: off
+# description: Serverul git oferă acces la repozitoriile git
+service git
+{
+        disable = no
+        type            = UNLISTED
+        port            = 9418
+        socket_type     = stream
+        wait            = no
+        user            = nobody
+        server          = /usr/bin/git-daemon
+        server_args     = --inetd --export-all --base-path=/pub/scm
+        log_on_failure  += USERID
+}</tt></pre>
+</div></div>
+<p>Verificaţi documentarea xinetd(8) şi instalarea, acesta este din sistemul Fedora.
+Altele ar putea fi diferite.</p>
+</dd>
+<dt>
+Daţi acces push/pull only developerilor.
+</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre><tt>$ grep git /etc/passwd <b>(1)</b>
+alice:x:1000:1000::/home/alice:/usr/bin/git-shell
+bob:x:1001:1001::/home/bob:/usr/bin/git-shell
+cindy:x:1002:1002::/home/cindy:/usr/bin/git-shell
+david:x:1003:1003::/home/david:/usr/bin/git-shell
+$ grep git /etc/shells <b>(2)</b>
+/usr/bin/git-shell</tt></pre>
+</div></div>
+<ol>
+<li>
+<p>
+log-in shell e setat la /usr/bin/git-shell, care nu permite
+nimic în afară de <tt>git push</tt> şi <tt>git pull</tt>.  Utilizatorul ar trebui
+să ia un ssh acces la maşină.
+</p>
+</li>
+<li>
+<p>
+în multe distribuţii /etc/shells are nevoie să listeze ce este folosit
+ca shell pentru login.
+</p>
+</li>
+</ol>
+</dd>
+<dt>
+Repozitoriu CVS-style.
+</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre><tt>$ grep git /etc/group <b>(1)</b>
+git:x:9418:alice,bob,cindy,david
+$ cd /home/devo.git
+$ ls -l <b>(2)</b>
+  lrwxrwxrwx   1 david git    17 Dec  4 22:40 HEAD -&gt; refs/heads/master
+  drwxrwsr-x   2 david git  4096 Dec  4 22:40 branches
+  -rw-rw-r--   1 david git    84 Dec  4 22:40 config
+  -rw-rw-r--   1 david git    58 Dec  4 22:40 description
+  drwxrwsr-x   2 david git  4096 Dec  4 22:40 hooks
+  -rw-rw-r--   1 david git 37504 Dec  4 22:40 index
+  drwxrwsr-x   2 david git  4096 Dec  4 22:40 info
+  drwxrwsr-x   4 david git  4096 Dec  4 22:40 objects
+  drwxrwsr-x   4 david git  4096 Nov  7 14:58 refs
+  drwxrwsr-x   2 david git  4096 Dec  4 22:40 remotes
+$ ls -l hooks/update <b>(3)</b>
+  -r-xr-xr-x   1 david git  3536 Dec  4 22:40 update
+$ cat info/allowed-users <b>(4)</b>
+refs/heads/master       alice\|cindy
+refs/heads/doc-update   bob
+refs/tags/v[0-9]*       david</tt></pre>
+</div></div>
+<ol>
+<li>
+<p>
+plasează developerii în acelaşi grup git.
+</p>
+</li>
+<li>
+<p>
+şi face repozitoriu shared fiind disponibil pentru inregistrări.
+</p>
+</li>
+<li>
+<p>
+folosiţi exemplul update-hook al lui Carl din Documentation/howto/
+pentru ramuri policy control.
+</p>
+</li>
+<li>
+<p>
+alice şi cindy pot împinge în master, numai bob poate împinge în doc-update.
+david este managerul de release (eliberare) şi este unica persoană care poate
+cera şi împinge tag-uri (version tags).
+</p>
+</li>
+</ol>
+</dd>
+<dt>
+HTTP server pentru suport dumb protocol transfer.
+</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre><tt>dev$ git update-server-info <b>(1)</b>
+dev$ ftp user@isp.example.com <b>(2)</b>
+ftp&gt; cp -r .git /home/user/myproject.git</tt></pre>
+</div></div>
+<ol>
+<li>
+<p>
+fiţi siguri că info/refs şi obiectele/info/pachete sînt noi
+</p>
+</li>
+<li>
+<p>
+upload pe server HTTP server hostat de ISP DVS.
+</p>
+</li>
+</ol>
+</dd>
+</dl>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 21-Dec-2007 17:57:00 UTC
+</div>
+</div>
+</body></html>
