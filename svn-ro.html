@@ -1,47 +1,47 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><title>Git - SVN Crash Course</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<link type="text/css" rel="stylesheet" media="screen" href="svn-ro_files/screen.css" />
-	<link type="text/css" title="Default" rel="stylesheet" media="screen" href="svn-ro_files/screen-default.css" />
-	<link type="text/css" title="Gitweb Gray" rel="alternate stylesheet" media="screen" href="svn-ro_files/screen-gitweb-gray.css" />
-	<link type="text/css" title="Blue" rel="alternate stylesheet" media="screen" href="svn-ro_files/screen-blue.css" />
-	<link type="text/css" title="Green" rel="alternate stylesheet" media="screen" href="svn-ro_files/screen-green.css" />
-	<link rel="icon" href="http://git.or.cz/course/favicon.png" type="image/png" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link type="text/css" rel="stylesheet" media="screen" href="svn-ro_files/screen.css" />
+        <link type="text/css" title="Default" rel="stylesheet" media="screen" href="svn-ro_files/screen-default.css" />
+        <link type="text/css" title="Gitweb Gray" rel="alternate stylesheet" media="screen" href="svn-ro_files/screen-gitweb-gray.css" />
+        <link type="text/css" title="Blue" rel="alternate stylesheet" media="screen" href="svn-ro_files/screen-blue.css" />
+        <link type="text/css" title="Green" rel="alternate stylesheet" media="screen" href="svn-ro_files/screen-green.css" />
+        <link rel="icon" href="http://git.or.cz/course/favicon.png" type="image/png" />
 </head>
 <body>
 
 <table summary="Navigation links" class="header" border="1" width="100%"><tbody><tr><td>
-	<a href="http://git.or.cz/index.html" id="top"><img src="svn-ro_files/git-logo.png" alt="Git" style="border-width: 0px;" height="27" width="72" /></a>
-	<span class="hide">:</span>
-	<span class="menu">
-		<a href="http://git.or.cz/index.html">Home</a> |
-		<a href="http://www.kernel.org/pub/software/scm/git/docs/">Documentation</a> |
-		<a href="http://git.or.cz/gitwiki">Wiki</a> |
+        <a href="http://git.or.cz/index.html" id="top"><img src="svn-ro_files/git-logo.png" alt="Git" style="border-width: 0px;" height="27" width="72" /></a>
+        <span class="hide">:</span>
+        <span class="menu">
+                <a href="http://git.or.cz/index.html">Home</a> |
+                <a href="http://www.kernel.org/pub/software/scm/git/docs/">Documentation</a> |
+                <a href="http://git.or.cz/gitwiki">Wiki</a> |
                 <a href="http://www.kernel.org/pub/software/scm/git/">Download Site</a> |
-		<a href="http://git.kernel.org/?p=git/git.git;a=summary">Git's Gitweb</a>
-	</span>
+                <a href="http://git.kernel.org/?p=git/git.git;a=summary">Git's Gitweb</a>
+        </span>
 </td></tr></tbody></table>
 
 <h1>Curs fulger Git - SVN</h1>
 
-<p>Bine aţi venit la sistemul de versionare Git! Aici vom învăţa să folosim Git bazîndu-ne pe cunoştinţele sistemului Subversion. Veţi avea nevoie de ultima versiune <a href="http://git.or.cz/">Git</a> instalată; De asemenea e posibil să aveţi nevoie de 
+<p>Bine aţi venit la sistemul de versionare Git! Aici vom învăţa să folosim Git bazîndu-ne pe cunoştinţele sistemului Subversion. Veţi avea nevoie de ultima versiune <a href="http://git.or.cz/">Git</a> instalată; De asemenea e posibil să aveţi nevoie de
 <a href="http://www.kernel.org/pub/software/scm/git/docs/tutorial.html">
 tutorialul</a> din documentaţia Git.</p>
 
 <ul>
-	<li><a href="#read">Prezentarea cursului</a></li>
-	<li><a href="#know">Lucruri care ar trebuie să cunoaşteţi</a></li>
-	<li><a href="#commit">Comiterea</a></li>
-	<li><a href="#browse">Explorerea</a></li>
-	<li><a href="#branch">Marcare cu tag-uri şi ramificarea</a></li>
-	<li><a href="#merge">Fuzionarea</a></li>
-	<li><a href="#remote">Lucrul cu repozitoriile la distanţă</a></li>
-	<li><a href="#share">Divizarea muncii</a></li>
+        <li><a href="#read">Prezentarea cursului</a></li>
+        <li><a href="#know">Lucruri care ar trebuie să cunoaşteţi</a></li>
+        <li><a href="#commit">Comiterea</a></li>
+        <li><a href="#browse">Explorerea</a></li>
+        <li><a href="#branch">Marcare cu tag-uri şi ramificarea</a></li>
+        <li><a href="#merge">Fuzionarea</a></li>
+        <li><a href="#remote">Lucrul cu repozitoriile la distanţă</a></li>
+        <li><a href="#share">Divizarea muncii</a></li>
 </ul>
 
 <div style="text-align: center;"><table class="relnotes" style="border: 1px none ; margin-left: auto; margin-right: auto;">
 <tbody><tr><td style="text-align: center;">
-<p style="margin: 0em 0.4em;">Dacă doriţi doar să urmăriţi proiectul unuia,
+<p style="margin: 0em 0.4em;">Dacă doriţi doar să urmăriţi un proiect,
 aceasta te v-a ajuta să începi repede:</p>
 <p>
 </p><table class="ccmd" style="margin: 0em auto;"><tbody><tr>
@@ -56,10 +56,10 @@ aceasta te v-a ajuta să începi repede:</p>
 
 <h2 id="read">Prezentarea cursului</h2>
 
-<p>În tabelele micic care apar pe parcursul cursului în partea stînga sunt listate comenzile Git, iar în dreapta sunt comenzile corespunzătoare Subversion. Dacă vă grăbiţi, o trecere rapidă cu vederea peste ele ar trebui să vă dea o idee despre folosirea de bază a Git.</p>
+<p>În tabelele mici care apar pe parcursul documentului în partea stînga sunt listate comenzile Git, iar în dreapta sunt comenzile corespunzătoare Subversion. Dacă vă grăbiţi, o trecere rapidă cu vederea peste ele ar trebui să vă dea o idee despre folosirea de bază a Git.</p>
 
 <p>Înainte de a rula vre-o comandă pentru prima dată, se recomandă consultarea
-fugitivă macar a manualului pentru comanda respectivă. Multe comenzi au 
+fugitivă macar a manualului pentru comanda respectivă. Multe comenzi au
 opţiuni interesante şi folositoare (pe care nu le vom detalia aici) şi uneori
 sînt note adăugătoare care s-ar putea să vă fie de folos. Pentru fiecare comandă se
 pot vedea instrucţiuni rapide folosind parametrul <code>-h</code>.</p>
@@ -67,9 +67,9 @@ pot vedea instrucţiuni rapide folosind parametrul <code>-h</code>.</p>
 
 <h2 id="know">Lucruri care ar trebuie să cunoaşteţi</h2>
 
-<p>Sînt cîteva conceptii importante pe care e bine să le cunoaşteţi cînd începeţi
+<p>Sunt cîteva conceptii importante pe care e bine să le cunoaşte-ţi cînd începeţi
 să lucraţi cu Git. Dacă totuşi sunteţi în grabă, puteţi sări peste secţiunea aceasta
-şi să vă întoarceţi la ea cînd vă simţiţi derutat; s-ar putea să prindeţi firul 
+şi să vă întoarceţi la ea cînd vă simţiţi derutat; s-ar putea să prindeţi firul
 folosind numai intuiţia.</p>
 
 <ul>
@@ -81,7 +81,7 @@ Git lucrează altfel: fiecare copie a ramificării proiectului
 (numită <em>copie de lucru (working copy)</em>) îşi are repozitoriul lui
 în subdirectoriul <code>.git</code> în directorul proiectului.
 
-Deci puteţi avea ramuri locale şi la distanţă (remote). De asemenea puteţi avea un aşa numit <em>bare (gol, dezgolit) repository</em> care nu este
+Deci puteţi avea ramuri locale şi externe (remote). De asemenea puteţi avea un aşa numit <em>repositoriu singuratic</em> care nu este
 ataşat de o copie de lucru; care este de folos în special la publicarea repozitoriului.
 Vom ajunge la asta mai tîrziu.
 </li>
@@ -89,26 +89,26 @@ Vom ajunge la asta mai tîrziu.
 <li>
 <b>URL.</b>
 În Subversion <em>URL</em>-ul identifică locul repozitoriului
-şi calea înăuntru repozitoriului, aşa că e bine să organizaţi logic 
+şi calea înăuntru repozitoriului, aşa că e bine să organizaţi logic
 repozitoriului. De obicei se crează directoarele <code>trunk/</code>,
 <code>ramuri/</code> şi <code>tags/</code>. În Git
 <em>URL</em>-ul este doar locaţia repozitoriului, şi mereu conţine
-ramuri şi tag-uri. Una din ramuri este default (deobicei numită
+ramuri şi tag-uri. Una din ramuri este implicită (deobicei numită
 master).
 </li>
 
 <li>
-<b>Revisions.</b>
-Subversion identifică reviziunile cu id-uri din numere zecimale crescătoare
-care sînt deobicei mici (dar ele pot ajunge deseori foarte repede
-la sute de mii în cazul proiectelor mari).  Asta nu este practicat în sistemul Git. Git
-identifică reviziunile cu id-uri SHA1, care sînt numere lungi de 160 de biţi
+<b>Reviziunile.</b>
+Subversion identifică reviziunile cu id-uri din numere naturale crescătoare
+care sunt deobicei mici (dar ele pot ajunge deseori foarte repede
+la sute de mii în cazul proiectelor mari). Așa ceva nu este practicat în sistemul de versionare Git. Git
+identifică reviziunile cu id-uri SHA1, care sunt numere lungi pe 160 de biţi
 scrise în cod hexazecimal. Poate fi înspăimîntător la început, dar în practică nu este
-un mare obstacol - puteţi face reefrinţă la ultima revizie cu <code>HEAD</code>,
+un mare obstacol - puteţi face referinţă la ultima revizie cu aliasul <code>HEAD</code>,
 este părinte al <code>HEAD^</code> şi este părinte al <code>HEAD^^ = HEAD~2</code>
 (puteţi continua adăugînd ^),
 taie şi lipeşte (cut'n'paste) ajută mult şi puteţi scrie doar cîteva cifre de la început
-pentru că sunt unice, Git v-a gici restul.
+pentru că sunt unice, Git v-a ghici restul.
 (Chiar puteţi şi lucruri mai avansate cu caracteristicile specificatorii de revizie, vedeţi
 manualul pentru <a href="http://www.kernel.org/pub/software/scm/git/docs/git-rev-parse.html">git-rev-parse</a> pentru mai multe detalii.)
 </li>
@@ -122,22 +122,22 @@ autorul şi cel care încarcă v-or fi diferiţi). Git v-a încerca să ghiceasc
 numele real şi e-mail-ul, dar cu e-mail în special ar putea să meargă greşit.
 Puteţi verifica folosind <code class="g">git config -l</code>şi să le setaţi cu:
 
-<pre>git config --global user.name "John DOE"
-git config --global user.email you@yourdomain.example.com
+<pre>git config --global user.name "Ion Roată"
+git config --global user.email ion@roata.md
 </pre>
 </li>
 
 <li>
 <b>Comenzi.</b>
-Comenzile Git sînt în forma <code>git command</code>.
-Puteţi folosi şi forma <code>git-command</code>
+Comenzile Git sunt în forma <code>git command</code>.
+Puteţi folosi şi forma <code>git-command</code> pînă la versiunea 1.6.
 </li>
 
 <li>
 <b>Culori.</b>
-Git poate avea o afişare colorată cu unele comenzi; unii 
+Git poate avea o listare colorată cu unele comenzi; unii
 urăsc culorile alţii le adoră, implicit afişarea se facă fără culori.
-Pentru a activa afişarea color:
+Pentru activarea culorilor, executați:
 
 <pre>git config --global color.diff auto
 git config --global color.status auto
@@ -147,14 +147,14 @@ git config --global color.branch auto
 
 <li>
 <b>Vizualizare.</b>
-S-ar putea să vă placă să priviţi repozitoriul folosind <code class="g">gitk</code>.
+S-ar putea să vă placă să priviţi repozitoriul folosind <code class="g">gitk, qgit</code>.
 </li>
 
 </ul>
 
 <h2 id="commit">Comiterea</h2>
 
-<p>Pentru început, să facem un repozitoriu Git pentru un proiect 
+<p>Pentru început, să facem un repozitoriu Git pentru un proiect
 şi să vedem cum facem operaţiunile de zi cu zi. Trecem în directorul
 care conţine proiectul şi iniţializăm repozitoriul Git:</p>
 
@@ -175,15 +175,15 @@ Faceţi cîteva schimbări aleatoare în proiect acum. Să verificăm ce am făc
     <td>svn diff | less</td>
 </tr></tbody></table>
 
-<p>Este una din cele mai puternice comenzi. Pentru a obţine un diff cu 
+<p>Este una din cele mai puternice comenzi. Pentru a obţine un diff cu
 o versiune şi o cale:</p>
 
 <table class="ccmd"><tbody><tr>
-    <td class="g">git diff <em>rev</em> <em>path</em></td>
-    <td>svn diff -r<em>rev</em> <em>path</em></td>
+    <td class="g">git diff <em>rev</em> <em>cale</em></td>
+    <td>svn diff -r<em>rev</em> <em>cale</em></td>
 </tr></tbody></table>
 
-<p>Git include informaţii în diff-uri despre adăugări, ştergeri şi schimbarea lagurilor fişierelor:</p>
+<p>Git include informaţii în diff-uri despre adăugări, ştergeri şi schimbarea permisiunilor a fişierelor:</p>
 
 <table class="ccmd"><tbody><tr>
     <td class="g">git apply</td>
@@ -204,14 +204,14 @@ depsre care Git încă nu ştie nimic. În plus,
 de asemnea va arăta ramificarea curentă.</p>
 
 <p>Cu timpul în directorul proiectului vor mai apărea fişiere neversionate.
-Dacă o să vreţi să le ştergeţi, puteţi folosi comanda <code class="g">git clean</code>, sau, dacă vreţi ă le lăsaţi acolo, dar Git să le ignore adăugaţile în <code class="g">.gitignore</code>
+Dacă o să doriţi să le ştergeţi, puteţi folosi comanda <code class="g">git clean</code>, sau, dacă doriţi să le lăsaţi acolo, dar Git să le ignore adăugaţile în fișierul <code class="g">.gitignore</code>
  (funcţionează la fel ca şi <code>svn:ignore</code>în SVN).</p>
 
 <p>Pentru a restaura un file din ultima versiune comisă:</p>
 
 <table class="ccmd"><tbody><tr>
-    <td class="g">git checkout <em>path</em></td>
-    <td>svn revert <em>path</em></td>
+    <td class="g">git checkout <em>cale</em></td>
+    <td>svn revert <em>cale</em></td>
 </tr></tbody></table>
 
 <p>Puteţi restaura tot sau doar un anumit fişier.</p>
@@ -220,14 +220,15 @@ Dacă o să vreţi să le ştergeţi, puteţi folosi comanda <code class="g">git
 ştergeţi fişiere:</p>
 
 <table class="ccmd"><tbody><tr>
-    <td class="g">git add <em>file</em>
-      <br />git rm <em>file</em>
-      <br />git mv <em>file</em></td>
-<td>svn add <em>file</em><br />svn rm <em>file</em><br />svn mv <em>file</em></td></tr></tbody></table>
+    <td class="g">git add <em>fișier</em>
+      <br />git rm <em>fișier</em>
+      <br />git mv <em>fișier</em></td>
+<td>svn add <em>fișier</em><br />svn rm <em>fișier</em><br />svn mv <em>fișier</em>
+</td></tr></tbody></table>
 
 <p>De asemenea puteţi adăuga/şterge recursiv directoare, etc.; Git este tare!</p>
 
-<p>Deci, e timpul să comitem modificrile noastre. O mare surpriză cu comanda:</p>
+<p>Deci, e timpul să comitem modificările noastre. O mare surpriză cu comanda:</p>
 
 <table class="ccmd"><tbody><tr>
     <td class="g">git commit -a</td>
@@ -237,14 +238,14 @@ Dacă o să vreţi să le ştergeţi, puteţi folosi comanda <code class="g">git
 <p>pentru a comite toate schimbările sau, ca şi în Subversion,
 puteţi comite doar unele fişiere.
 Cîteva cuvinte la mesajul de comitere: este <em>obişnuit</em>
-de a avea un sumar scurt al comiterii ca şi prima linie a mesajului,
+de a avea un sumar scurt al schimbărilor ca prima linie a mesajului,
 deoarece diferite unelte care listează commit-urile deseori arată numai
 prima linie a mesajului. Puteţi specifica mesajul pentru commit
 folosind parametrul <code>-m</code>, Dvs puteţi pune cîteva argumente <code>-m</code> şi ele vor crea
 paragrafe separate în mesajul commit-ului:</p>
 
 <p>Dacă nu puneţi nici un parametru <code>-m</code> sau
-<code>-e</code>, la executarea comenzii <code>git coomit</code>
+<code>-e</code>, la executarea comenzii <code>git commit</code>
 se va porni editorul dumneavoastră din variabila de mediu <code>$EDITOR</code>
 şi veţi putea scrie mesajul acolo, ca şi la Subversion. În afară de asta, se afişează lista fişierilor pentru care urmează a fi comise.</p>
 
@@ -258,13 +259,13 @@ Git face mult mai bine - puteţi corecta ultima comitere
 încărcare folosind <code class="g">git reset HEAD^</code>,
 asta nu v-a afecta directorul de lucru.</p>
 
-<h2 id="browse">Explorerea</h2>
+<h2 id="browse">Explorarea</h2>
 
 <p>Acum că am încărcat cîte ceva, puteţi vedea istoria schimbărilor:</p>
 
 <table class="ccmd"><tbody><tr>
-    <td class="g">git log<br />git blame <em>file</em></td>
-    <td>svn log | less<br />svn blame <em>file</em></td>
+    <td class="g">git log<br />git blame <em>fișier</em></td>
+    <td>svn log | less<br />svn blame <em>fișier</em></td>
 </tr></tbody></table>
 
 <p>Comanda <code>log</code> funcţionează similar cu cea din Subversion; iarăşi,
@@ -273,17 +274,17 @@ asta nu v-a afecta directorul de lucru.</p>
 
 <p>Comanda <code>blame</code> este mai puternică deoarece poate detecta mişcarea liniilor,
 chiar cu copii ale fişierilor şi redenumirilor. Dar probabil aţi vrea să faceţi altceva! Deobicei,
-cînd folosiţi annotate cautaţi originea a unei bucăţi de cod,
+cînd folosiţi annotate căutaţi originea a unei bucăţi de cod,
 şi aşa numita unealtă <em>pickaxe</em> al Git-ului este mult mai confortabilă
-pentru acest lucru (<code>git log -S<em>string</em></code> arată 
+pentru acest lucru (<code>git log -S<em>string</em></code> arată
 comiterile care adaugă sau şterge careva fişiere care conrespund cu masca <em>string</em>).</p>
 
-<p>Puteţi vedea conţinutul unui fişier, al unul director sau 
+<p>Puteţi vedea conţinutul unui fişier, al unul director sau
 a unui commit cu:</p>
 
 <table class="ccmd"><tbody><tr>
-    <td class="g">git show <em>rev</em>:<em>path/to/file</em>
-      <br />git&nbsp;show&nbsp;<em>rev</em>:<em>path/to/directory</em>
+    <td class="g">git show <em>rev</em>:<em>calea/spre/fișier</em>
+      <br />git&nbsp;show&nbsp;<em>rev</em>:<em>calea/spre/directoriu</em>
       <br />git show <em>rev</em></td>
     <td>svn cat <em>url</em>
       <br />svn list <em>url</em>
@@ -291,44 +292,44 @@ a unui commit cu:</p>
       <br />svn diff -c<em>rev</em> <em>url</em></td>
 </tr></tbody></table>
 
-<h2 id="branch">Marcare cu tag-uri şi ramificarea</h2>
+<h2 id="branch">Marcarea cu tag-uri şi ramificarea</h2>
 
-<p>Subversion marchează unele checkpoint-uri în istorie printre copii, copie este 
-plasată deobicei în directoriul numit <code>tags</code>. Tag-urile în Git are cu mult mai mult potenţial: ele poate avea o descriere arbitrară ataşată (prima linie
+<p>Subversion marchează unele checkpoint-uri în istorie printre copii, copie este
+plasată deobicei în directoriul numit <code>tags</code>. Tag-urile în Git au cu mult mai mult potenţial: ele pot avea o descriere arbitrară ataşată (prima linie
 e specială ca şi în cazul commit-ului), unii defapt păstrează
 toate anunţurile în tag-ul <code>descriptions</code>. Identitatea
-persoanei care a etichetat este păstrat(iarăşi folosind aceleaşi reguli
-ca şi identitatea commiter-ului). De obicei etichetaţi commit-urile dar, dacă vreţi,
+persoanei care a etichetat este păstrată(iarăşi folosind aceleaşi reguli
+ca şi identitatea commiter-ului). De obicei etichetaţi commit-urile dar, dacă doriţi,
 puteţi să etichetaţi fişiere (sau directoarele).
 şi etichetarea poate fi semnată cryptographic PGP pentru a verifica identitatea
 (după natura Git-ului, această semnătură deasemenea confirmă validitatea
 reviziei asociate, istoria ei şi ramificarea). Deci:</p>
 
 <table class="ccmd"><tbody><tr>
-    <td class="g">git tag -a <em>name</em></td>
+    <td class="g">git tag -a <em>nume_etichetă</em></td>
     <td>svn copy http://example.com/svn/trunk
-    http://example.com/svn/tags/<em>name</em></td>
+    http://example.com/svn/tags/<em>nume_etichetă</em></td>
 </tr></tbody></table>
 
 <p>Pentru listarea etichetelor şi afişarea messajelor lor:</p>
 
 <table class="ccmd"><tbody><tr>
-    <td class="g">git tag -l<br />git show <em>tag</em></td>
+    <td class="g">git tag -l<br />git show <em>etichetă</em></td>
     <td>svn&nbsp;list&nbsp;http://example.com/svn/<em>tags/</em>
     <br />svn&nbsp;log --limit&nbsp;1&nbsp;http://example.com/svn/tags/<em>tag</em></td>
 </tr></tbody></table>
 
 <p>Ca şi Subversion, Git poate face ramificări (surprize surprize!). În Subversion,
-de fapt copiaţi proiectul într-un subdirector. În Git, îi spuneţi... ăăăă 
+de fapt copiaţi proiectul într-un subdirector. În Git, îi spuneţi... ăăăă
 ...să creeze o ramificare.</p>
 
 <table class="ccmd"><tbody><tr>
-    <td class="g">git branch <em>branch</em>
-      <br />git&nbsp;checkout&nbsp;<em>branch</em></td>
+    <td class="g">git branch <em>ramură</em>
+      <br />git&nbsp;checkout&nbsp;<em>ramură</em></td>
     <td>svn copy http://example.com/svn/trunk
-      http://example.com/svn/branches/<em>branch</em>
+      http://example.com/svn/branches/<em>ramurpbranch</em>
       <br />svn switch
-      http://example.com/svn/branches/<em>branch</em></td>
+      http://example.com/svn/branches/<em>ramură</em></td>
 </tr></tbody></table>
 
 <p>Prima comandă creează o ramificare, a doua comandă trece directorul de lucru
@@ -336,7 +337,7 @@ de fapt copiaţi proiectul într-un subdirector. În Git, îi spuneţi... ăăă
 <code>git branch</code> pentru a aduce directorul de lucru la o versiune diferită
 de cea mai recentă.</p>
 
-<p>Puteţi lista ramificările convinabil folosind comanda <code>git-branch</code> fără argumente.
+<p>Puteţi lista ramificările convinabil folosind comanda <code>git branch</code> fără argumente.
 Ramura curentă e marcată cu "*".</p>
 
 <table class="ccmd"><tbody><tr>
@@ -357,11 +358,11 @@ Ramura curentă e marcată cu "*".</p>
 <h2 id="merge">Fuzionarea</h2>
 
 <p>Git suportă fuzionarea între ramificări mai bine decît Subversion - istoria
-la ambele ramificări se păstrează în decursul a mai multe fizionări astfel repetarea fuzionilor se face foarte simplu. Asiguraţi-vă că vă aflaţi în una din ramurile pe care vreţi să le fuzionaţi şi o puteţi fuziona cu alta specificînd-o ca parametru:</p>
+la ambele ramificări se păstrează în decursul a mai multe fizionări astfel repetarea fuzionilor se face foarte simplu. Asiguraţi-vă că vă aflaţi în una din ramurile pe care doriţi să le fuzionaţi şi o puteţi fuziona cu alta specificînd-o ca parametru:</p>
 
 <table class="ccmd"><tbody><tr>
-    <td class="g">git merge <em>branch</em></td>
-    <td><em>(presupunînd că ramura a fost creată în versiunea 20 şi	sînteţi în copia de lucru a trunk)</em>
+    <td class="g">git merge <em>ramură</em></td>
+    <td><em>(presupunînd că ramura a fost creată în versiunea 20 şi sînteţi în copia de lucru a trunk)</em>
       <br />svn merge -r 20:HEAD
       http://example.com/svn/branches/<em>branch</em></td>
 </tr></tbody></table>
@@ -371,10 +372,10 @@ ele pur şi simplu v-or fi copiate pe cealaltă (aşa numita <em>fast-forward me
 Dacă au fost făcute schimbări pe ambele ramificări, ele sunt fuzionate inteligent
 (aşa numit <em>three-way merge</em>): dacă oarecare fuzionarea e cu conflict, <code>git merge</code>
 le va reporta şi vă va lăsa să le corectaţi, fuzionînd restul fişierelor; puteţi executa <code>git commit</code> cînd rezolvaţi conflictele. Dacă nu există nici un conflict, o comiterea e făcută automat cu un mesaj de log convenabil (sau puteţi să faceţi
-<code class="g">git merge --no-commit <em>branch</em></code> pentru a revedea rezultatul 
-fuzionării şi după aceea să faceţi commit desinestătător).</p>
+<code class="g">git merge --no-commit <em>ramură</em></code> pentru a revedea rezultatul
+fuzionării şi după aceea să faceţi commit manual).</p>
 
-<p>În afară de fuzionare, uneori e nevoie doar să scoateţi un anumit commit dintr-o altă ramificare. Pentru a aplica schimbările in versiunea <em>rev</em> şi a le comite într-o ramificare curentă folosiţi:</p>
+<p>În afară de fuzionare, uneori e nevoie doar să scoateţi un anumit commit dintr-o altă ramificare. Pentru a aplica schimbările în versiunea <em>rev</em> şi a le comite într-o ramificare curentă folosiţi:</p>
 
 <table class="ccmd"><tbody><tr>
     <td class="g">git cherry-pick <em>rev</em></td>
@@ -383,10 +384,10 @@ fuzionării şi după aceea să faceţi commit desinestătător).</p>
 
 <h2 id="remote">Lucrul cu repozitoriile la distanţă</h2>
 
-<p>Pînă aici, noi am neglijat faptul că Git este un sistem <em>distribuit</em> de versionare. Să încercă să accesăm repozitoriile la distanţă.</p>
+<p>Pînă aici, noi am neglijat faptul că Git este un sistem <em>distribuit</em> de versionare. Să încercăm să accesăm repozitoriile la distanţă.</p>
 
 <p>Dacă lucraţi la proiectul altcuiva de obicei <em>clonaţi</em>
-repozitoriul în loc să începeţi unul desinestătător. Noi deja am menţionat că la începutul acestui
+repozitoriul în loc să începeţi unul desinestătător. Noi deja am menţionat la începutul acestui
 document:</p>
 
 <table class="ccmd"><tbody><tr>
@@ -394,62 +395,62 @@ document:</p>
     <td>svn&nbsp;checkout&nbsp;<em>url</em></td>
 </tr></tbody></table>
 
-<p>Acum aveţi ramificarea implicită (default) a repozitoriului, de obicei numită <code>master</code>,
+<p>Acum aveţi ramificarea implicită a repozitoriului, de obicei numită <code>master</code>,
 dar mai aveţi şi alte ramificări la distanţă, şi etichete.
 În configuraţia implicită a proiectului clonat, ramificarea implicită locală urmăreşte
-ramificarea îndepărtată <em>origin</em>, care reprezintă ramificarea implicită în repozitoriul la distanţă (remote).</p>
+ramificarea externă <em>origin</em>, care reprezintă ramificarea implicită în repozitoriul la distanţă.</p>
 
 <p>Vă întrebaţi ce înseamnă <em>repozitoriu la distanţă</em>? Păi, pînă acum am lucrat
 numai cu repozitorii locale. Repozitoriile la distanţă sînt o imagine-oglindă a ramurilor
-din repozitoriile la distanţă (remote repositories) şi niciodată nu veţi face schimbări direct în ele. Nu aveţi niciodată treabă cu ramificările la distanţă. Dacă vreţi să treceţi în una din ele, trebuie să creaţi o ramificare locală corespunzătoare care va versiona ramificarea la distanţă (remote branch):</p>
+din repozitoriile la distanţă şi niciodată nu veţi face schimbări direct în ele. Nu aveţi niciodată treabă cu ramificările la distanţă. Dacă vreţi să treceţi în una din ele, trebuie să creaţi o ramificare locală corespunzătoare care va versiona ramificarea externă:</p>
 
 <table class="ccmd"><tbody><tr>
     <td class="g">
-      git checkout --track -b <em>branch</em> origin/<em>branch</em></td>
+      git checkout --track -b <em>ramură</em> origin/<em>ramură</em></td>
     <td>svn&nbsp;switch&nbsp;<em>url</em></td></tr></tbody></table>
 
-<p>Dacă DVS vreţi totdeauna să urmăriţi ramuri îndepărtate(remote branches) (şi să uitaţi
+<p>Dacă DVS doriţi permanent să urmăriţi ramuri externe (şi să uitaţi
 de <code>--track</code>) puteţi seta:</p>
 
 <pre>git config --global branch.autosetupmerge auto
 </pre>
 
-<p>Puteţi adăuga mai multe ramificări la distanţă la un repozitoriu clonat, la fel ca şi 
+<p>Puteţi adăuga mai multe ramificări la distanţă la un repozitoriu clonat, la fel ca şi
 unul nou iniţializat, folosind <code class="g">git remote add <em>remote</em> <em>url</em></code>.
 Comanda <code class="g">git remote</code> listează toate repozitoriile la distanţă
 şi <code class="g">git remote show <em>remote</em></code> arată
 ramificările într-un repozitoriu la distanţă.</p>
 
 <p>Acum, cum luaţi careva schimbări dintr-un repozitoriu la distanţă?
-le aduceţi (fetch - a aduce): <code class="g">git fetch</code>.
+le descărcați: <code class="g">git fetch</code>.
 La acest moment ele sînt în repozitoriul local şi le puteţi examina folosind
 <code>git log<em> origin</em></code> (<code>git log HEAD..<em>origin</em></code>
 pentru a vedea schimbările care nu le aveţi în ramificarea locală), faceţi un diff, şi evident, fuzionaţi-le - doar rulaţi
 <code>git merge <em>origin</em></code>. Notă!!! Dacă nu specificaţi o ramificare
-pentru aducere (fetch), implicit se va considera aceeaşi ramificare de la distanţă.</p>
+pentru descărcare, implicit se va considera aceeaşi ramificare de la distanţă.</p>
 
-<p>Deoarece se întîmplă foarte des să aduceţi(fetch) + fuzionaţi (merge) ramificarea de la distanţă, există o comandă pentru automatizarea acestui lucru:</p>
+<p>Deoarece se întîmplă foarte des să descărcați și fuzionaţi ramificarea externă, există o comandă pentru automatizarea acestui lucru:</p>
 
 <table class="ccmd"><tbody><tr>
     <td class="g">git pull</td>
     <td>svn update</td>
 </tr></tbody></table>
 
-<h2 id="share">Divizarea muncii</h2>
+<h2 id="share">Publicare muncii</h2>
 
 <p>Repozitoriul local poate fi folosit de alţii pentru a scoate (<em>pull</em>) schimbări, dar
 normal aţi vrea să aveţi un repozitoriu privat şi unul public.
-Cel public este cel în care comiteţi şi din care ceilalţi scot.
-Rulăm <code class="g">git push <em>remote</em></code> pentru a publica ramificările locale în ramificările la distanţă corespunzătoare - aceasta lucrează 
+Cel public este cel în care comiteţi şi din care ceilalţi descarcă.
+Rulăm <code class="g">git push <em>remote</em></code> pentru a publica ramificările locale în ramificările la distanţă corespunzătoare - aceasta lucrează
 de obicei doar prin SSH (sau HTTP dar cu o setare specială a webserverului).
-Este recomandat ca să setaţi o cheie SSH şi un mecanism SSH 
+Este recomandat ca să setaţi o cheie SSH şi un mecanism SSH
 pentru a nu fi nevoit să introduceţi parola de fiecare dată.</p>
 
 <p>Un lucru important este că de obicei ar trebui să publicaţi numai ramificări îndepărtate
 care nu sînt la moment luate pe de altă parte (din acelaşi motiv
 niciodată nu treceţi repozitoriul local la o ramificare de la distanţă)! Altfel
 copia de lucru a ramificării de la distanţă va fi neactualizată şi va se va crea o situaţie confuză. Cel mai bine pentru a evita aceasta este de a publica numai repozitoriile
-la distanţă care nu conţin copii de lucru - aşa numitele repozitorii <em>simple (bare)</em>
+la distanţă care nu conţin copii de lucru - aşa numitele repozitorii <em>singuratice</em>
 care este deobicei folosit pentru acces public sau un loc de întîlnire
 pentru programatori - doar pentru a distribui istoria, pentru care descărcarea unei copii de lucru ar fi inutilă. Puteţi crea un asemenea repozitoriu.
 Vedeţi <a href="http://www.kernel.org/pub/software/scm/git/docs/user-manual.html#setting-up-a-public-repository">Setarea unui repozitoriu public</a> pentru detalii.</p>
@@ -481,11 +482,11 @@ Sperăm să-l folosiţi Git cu plăcere!</p>
 <hr />
 
 <div class="footer">
-	<span class="menu">
-		This page is maintained by Petr Baudis. Please email me
-		at <a href="mailto:pasky@suse.cz">pasky@suse.cz</a>
-		with patches, suggestions and comments.
-	</span>
+  <span class="menu">
+    Aceast document a fost tradus de Sergiu Roșca și revizuit de Vlad Gurdiga, Vitalie Lazu.
+    <br />
+    Comentarii, greșeli la gurguga@gmail.com, vitalie.lazu@gmail.com
+  </span>
 </div>
 
 </body></html>
