@@ -1,6 +1,7 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <style type="text/css">
 /* Debug borders */
 p, li, dt, dd, div, pre, h1, h2, h3, h4, h5, h6 {
@@ -251,49 +252,53 @@ div.exampleblock-content {
   border-left: 2px solid silver;
   padding-left: 0.5em;
 }
-</style><title>Zi de zi cu 20 de comenzi git</title></head><body>
+</style>
+<title>20 de comenzi GIT pentru lucrul de zi cu zi</title>
+</head>
+<body>
 <div id="header">
-<h1>Zi de zi cu 20 de comenzi git</h1>
+<h1>20 de comenzi GIT pentru lucrul de zi cu zi</h1>
 </div>
+
 <div id="preamble">
 <div class="sectionbody">
-<p>De comenzile din secţiunea <a href="#Basic%20Repository">[Repozitoriul de bază]</a> se folosesc persoanele care deţin un repozitoriu
- --- adică toţi, deoarece fiecare copie de lucru a unui repositoriu git este un repozitoriu.</p>
-<p>în afară de aceasta, sunt esenţiale comenzile din secţiunea <a href="#Individual%20Developer%20%28Standalone%29">[Developer Individual (Singuratic)]</a>
-pentru oricine care face un commit, chiar şi pentru cineva care lucrează singur.</p>
-<p>Dacă lucraţi cu alte persoane, veţi avea nevoie de comenzi care sint listate deasemenea in <a href="#Individual%20Developer%20%28Participant%29">[Un developer (Participant)]</a>.</p>
-<p>Oamenii care joacă rolul <a href="#Integrator">[Integrator]</a>-ului au nevoie să înveţe cîteva comenzi
- în plus la cele de mai sus.</p>
-<p>Comenzile <a href="#Repository%20Administration">[Administrarea Repositoriului]</a> sunt pentru administratorii 
-de sistemă care sunt responsabili pentru menţinerea şi gestionarea repozitoriilor git.</p>
+<p><a href="#Comenzi_de_bază_pentru_lucrul_cu_repozitoriile">Comenzile de bază pentru lucrul cu repozitoriile</a> se folosesc de cei care deţin un repozitoriu - adică practic de toată lumea pentru că orice director git este un repozitoriu.</p>
+
+<p>În afară de aceasta, sînt esenţiale <a href="#Comenzi_pentru_lucrul_individual_al_programatorilor">comenzile pentru lucrul individual al programatorilor</a> pentru oricine face un commit (transmitere), chiar şi pentru cineva care lucrează singur.</p>
+
+<p>Dacă lucraţi în echipă, veţi avea nevoie de comenzile care sînt listate de asemenea în secţiunea <a href="#Comenzi_pentru_lucrul_în_echipă_al_programatorilor">Comenzi pentru lucrul în echipă al programatorilor</a>.</p>
+
+<p><a href="#Integrator">Integratorii</a> au nevoie de cîteva comenzi în plus la cele de mai sus.</p>
+
+<p><a href="#Administrarea_repozitoriului">Comenzi de administrare a repositoriului</a> sînt pentru administratorii de sistem responsabili pentru păstrarea şi transmiterea
+repozitoriilor git.</p>
 </div>
 </div>
-<h2>Repositoriul de bază<a id="Basic Repository"></a></h2>
+
+<h2>Comenzi de bază pentru lucrul cu repozitoriile<a id="Comenzi_de_bază_pentru_lucrul_cu_repozitoriile"></a></h2>
+
 <div class="sectionbody">
-<p>Toţi folosesc aceaste comenzi pentru a deservi repozitoriile git.</p>
+<p>Aceste comenzi sunt folosite pentru mentenanţa repositoriilor git.</p>
 <ul>
 <li>
 <p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-init.html">git init(1)</a> sau <a href="http://www.kernel.org/pub/software/scm/git/docs/git-clone.html">git clone(1)</a> pentru a crea un
-repozitoriu nou.
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-init.html">git-init(1)</a> sau <a href="http://www.kernel.org/pub/software/scm/git/docs/git-clone.html">git-clone(1)</a> pentru a crea un repozitoriu nou.
 </p>
 </li>
 <li>
 <p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-fsck.html">git fsck(1)</a> pentru a testa dacă repozitoriul conţine erori.
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-fsck.html">git-fsck(1)</a> pentru a verifica dac repozitoriul conţine erori.
 </p>
 </li>
 <li>
 <p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-gc.html">git gc(1)</a> pentru a gestiona repositoriul, de exemplu reîmpachetarea şi eliminarea commit-urilor orfane.
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-gc.html">git-gc(1)</a> pentru a optimizarea şi compactarea repozitoriului.
 </p>
 </li>
 </ul>
 <h3>Exemple</h3>
 <dl>
-<dt>
-Testăm starea repositoriului şi eliminăm gunoiul.
-</dt>
+<dt>Verificarea şi curăţarea repozitoriului.</dt>
 <dd>
 <div class="listingblock">
 <div class="content">
@@ -302,135 +307,67 @@ $ git count-objects <b>(2)</b>
 $ git gc <b>(3)</b></tt></pre>
 </div></div>
 <ol>
-<li>
-<p>
-rulînd fără opţiunea <tt>--full</tt> este deobicei mai rapidă şi asigură starea repositoriului la un nivel acceptabil.
-</p>
-</li>
-<li>
-<p>
-vedeţi acum cîte obiecte libere sînt şi cît
-spaţiu pe disc este pierdut fără reîmpachetare.
-</p>
-</li>
-<li>
-<p>
-reîmpachetează repozitoriul local şi rulează alte funcţii de gestionare.
-</p>
-</li>
-</ol>
-</dd>
-<dt>
-Reîmpachetează un mic proiect intr-un singur pachet.
-</dt>
-<dd>
-<div class="listingblock">
-<div class="content">
-<pre><tt>$ git gc <b>(1)</b>
-</tt></pre>
-</div></div>
-<ol>
-<li>
-<p>
-împachetează toate obiectele disponibile din refs intr-un singur pachet,
-apoi şterge alte pachete.
-</p>
-</li>
+<li><p>Executat fără <tt>--full</tt> este de obicei mai ieftin ca consum de resurse şi asigură
+repozitorului o stare de "sănătate" destul de bună.</p></li>
+<li><p>Enumeră obiecte orfane şi spaţiul consumat de ele.</p></li>
+<li><p>Sterge obiectele orfane şi efectuează şi alte operaţiuni de optimizare a repozitoriului.</p></li>
 </ol>
 </dd>
 </dl>
 </div>
-<h2>Developer individual (Singuratic)<a id="Individual Developer (Standalone)"></a></h2>
+
+<h2>Comenzi pentru lucrul individual al programatorilor<a id="Comenzi_pentru_lucrul_individual_al_programatorilor"></a></h2>
+
 <div class="sectionbody">
-<p>Un developer individual nu face schimb de patch-uri cu
-alţii, şi lucrează singur într-un singur repozitoriu, folosind
+<p>Un programator individual nu face schimb de patch-uri cu 
+alţii, şi lucrează singur într-un singur repozitoriu, folosind 
 următoarele comenzi.</p>
 <ul>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-show-branch.html">git-show-branch(1)</a> pentru a vedea ramificarea curentă a directorului git.</p></li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-log.html">git-log(1)</a> pentru a vedea evoluţia directorului git.</p></li>
 <li>
 <p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-show-branch.html">git show-branch(1)</a> pentru a vedea unde vă aflaţi.
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-checkout.html">git-checkout(1)</a> şi <a href="http://www.kernel.org/pub/software/scm/git/docs/git-branch.html">git-branch(1)</a> pentru a schimba ramificarea directorului git.
+</p>
+</li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-add.html">git-add(1)</a> pentru a lucra cu index-ul git.</p></li>
+<li>
+<p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-diff.html">git-diff(1)</a> şi <a href="http://www.kernel.org/pub/software/scm/git/docs/git-status.html">git-status(1)</a> pentru a vedea starea fişierelor din director.
 </p>
 </li>
 <li>
 <p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-log.html">git log(1)</a> pentru a vedea ce s-a întîmplat.
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-commit.html">git-commit(1)</a> înregistrează modificările curente ale fişierelor în git.
 </p>
 </li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-checkout.html">git checkout(1)</a> şi <a href="http://www.kernel.org/pub/software/scm/git/docs/git-branch.html">git branch(1)</a> pentru a schimba
-    ramura curentă.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-add.html">git add(1)</a> pentru a lucra cu fişierul index.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-diff.html">git diff(1)</a> şi <a href="http://www.kernel.org/pub/software/scm/git/docs/git-status.html">git status(1)</a> pentru a vedea
-    la ce etapă vă aflaţi cu lucrul.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-commit.html">git commit(1)</a> pentru a avansa ramura curentă.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-reset.html">git reset(1)</a> şi <a href="http://www.kernel.org/pub/software/scm/git/docs/git-checkout.html">git checkout(1)</a> (cu
-    parametrii căii de acces) pentru a anula schimbările.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-merge.html">git merge(1)</a> pentru a uni ramurile locale.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-rebase.html">git rebase(1)</a> pentru a gestiona ramurile temei.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-tag.html">git tag(1)</a> pentru a marca punct cunoscut.
-</p>
-</li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-reset.html">git-reset(1)</a> anulează schimbările necomise.</p></li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-reset.html">git-checkout(1)</a> (cu parametrii căii de acces) pentru a anula schimbările.</p></li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-merge.html">git-merge(1)</a> pentru a combina modificările a două sau mai multe ramificări.</p></li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-rebase.html">git-rebase(1)</a> schimbă ramificarea de bază a directorului git</p></li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-tag.html">git-tag(1)</a> marchează starea curentă a directorului git.</p></li>
 </ul>
+
 <h3>Exemple</h3>
 <dl>
-<dt>
-Folosiţi o arhivă tarball ca punct de start pentru un repozitoriu nou.
-</dt>
+<dt>Folosirea unei arhive ca punct de start pentru un repozitoriu nou.</dt>
 <dd>
 <div class="listingblock">
 <div class="content">
 <pre><tt>$ tar zxf frotz.tar.gz
 $ cd frotz
-$ git init
+$ git-init
 $ git add . <b>(1)</b>
-$ git commit -m "importă copacul sursă al frotz."
+$ git commit -m "Imaporarea directorului frotz."
 $ git tag v2.43 <b>(2)</b></tt></pre>
 </div></div>
 <ol>
-<li>
-<p>
-adăugaţi totul sub directoria curenta.
-</p>
-</li>
-<li>
-<p>
-faceţi o etichetă, fără anotare.
-</p>
-</li>
+<li><p>se iniţiază un repozitoriu git nou în directorul curent</p></li>
+<li><p>se marchează starea curentă a directorului cu eticheta "v2.43"</p></li>
 </ol>
 </dd>
-<dt>
-Creaţi o ramura de lucru şi dezvoltaţi.
-</dt>
+
+<dt>Lucrul cu ramificările</dt>
 <dd>
 <div class="listingblock">
 <div class="content">
@@ -452,107 +389,37 @@ $ git log --since='3 days ago' <b>(11)</b>
 $ git log v2.43.. curses/ <b>(12)</b></tt></pre>
 </div></div>
 <ol>
-<li>
-<p>
-crează o ramură nouă.
-</p>
-</li>
-<li>
-<p>
-anulaţi schimbările voastre în <tt>curses/ux_audio_oss.c</tt>.
-</p>
-</li>
-<li>
-<p>
-trebuie să spuneţi git-ului dacă aţi adaugat un file nou; ştergerile şi
-modificările vor fi înregistrate dacă rulaţi comanda <tt>git commit -a</tt> mai tîrziu.
-</p>
-</li>
-<li>
-<p>
-ca să vedeţi ce schimbări trimiteţi.
-</p>
-</li>
-<li>
-<p>
-faceţi commit la orice aţi testat, cu semnătură.
-</p>
-</li>
-<li>
-<p>
-aduceţi ultimul commit înapoi, lăsînd tot ce este în mapa de lucru.
-</p>
-</li>
-<li>
-<p>
-verificaţi schimbările de când ati readus ultimul commit înapoi.
-</p>
-</li>
-<li>
-<p>
-refaceţi commit-ul distrus înainte, folosind mesajul
-care l-aţi scris iniţial.
-</p>
-</li>
-<li>
-<p>
-treceţi la ramura principală.
-</p>
-</li>
-<li>
-<p>
-Combinaţi o ramură de lucru cu ramura principală.
-</p>
-</li>
-<li>
-<p>
-revedeţi log-urile la commit-uri; alte opţiuni pentru a limita numarul de commit-uri incluse <tt>--max-count=10</tt> (arată 10 commit-uri),
-<tt>--until=2008-01-10</tt>, etc.
-</p>
-</li>
-<li>
-<p>
-vedeţi numai schimbările care au afectat directoriul<tt>curses/</tt>,
-de la eticheta <tt>v2.43</tt>.
-</p>
-</li>
+<li><p>Crează o ramificare nouă a directorului.</p></li>
+<li><p>Întoarce <tt>curses/ux_audio_oss.c</tt> la starea iniţială</p></li>
+<li><p>Notificaţi git că aţi adăugat un fişier nou; ştergerile şi modificările vor fi înregistrate dacă rulaţi comanda <tt>git commit -a</tt> mai tîrziu.</p></li>
+<li><p>Arată diferenţa faţă de HEAD</p></li>
+<li><p>Trimite.</p></li>
+<li><p>Anulaţi ultima trimitere, lăsînd ce este în ramificarea curentă.</p></li>
+<li><p>Arată diferenţa de la anularea ultimii trimiteri.</p></li>
+<li><p>Retrimite ceea ce s-a anulat la pasul precedent folosind mesajul original.</p></li>
+<li><p>Treceţi la ramura principală.</p></li>
+<li><p>Combină ramificarea creată la primul pas cu ramificare principală.</p></li>
+<li><p>Arată trmiterile (commit); alte moduri de selectare a înregistrărilor pot fi combinate: <tt>--max-count=10</tt> - arată ultimile 10 trimiteri,
+<tt>--until=2005-12-10</tt>, etc.</p></li>
+<li><p>Arată schimbările de la <tt>v2.43</tt> încoace care au afectat fişierele din directorul <tt>curses/</tt>.</p></li>
 </ol>
 </dd>
 </dl>
 </div>
-<h2>Developer Individual (Participant)<a id="Individual Developer (Participant)"></a></h2>
+
+<h2>Comenzi pentru lucrul în echipă al programatorilor<a id="Comenzi_pentru_lucrul_în_echipă_al_programatorilor"></a></h2>
 <div class="sectionbody">
-<p>Un developer lucrînd ca  participant într-un grup al unui proiect trebuie
-să înveţe cum să comunice cu alţii, şi foloseşte aceste comenzi în
-adăugare la cele necesare unui developer singuratic.</p>
+<p>Fiecare programator dintr-o echipă colaborează cu ceilalţi membri ai echipei folosind comenzi adăugătoare celor <a href="#Comenzi pentru lucrul individual al programatorilor">pentru lucrul individual al programatorilor</a>.</p>
 <ul>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-clone.html">git clone(1)</a> pentru clonarea unui repositoriu.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-pull.html">git pull(1)</a> şi <a href="http://www.kernel.org/pub/software/scm/git/docs/git-fetch.html">git fetch(1)</a> de la "origine"
-    pentru a descărca schimbările din repositoriul original.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-push.html">git push(1)</a> pentru a trimite schimbarile locale spre repositoriul comun.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-format-patch.html">git format-patch(1)</a> pentru a prepara un email cu schimbările locale.
-</p>
-</li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-clone.html">git-clone(1)</a> copiază un repozitoriu într-un director.</p></li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-pull.html">git-pull(1)</a> and <a href="http://www.kernel.org/pub/software/scm/git/docs/git-fetch.html">git-fetch(1)</a> de la actualizează repozitorul curent cu alt repozitor sau altă ramificare.</p></li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-push.html">git-push(1)</a> trimite repozitorul curent spre un altul.</p></li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-format-patch.html">git-format-patch(1)</a> pregăteşte un patch pentru timiterea prin e-mail</p></li>
 </ul>
+
 <h3>Exemple</h3>
 <dl>
-<dt>
-Clonarea unui repositoriu central şi lucrul asupra lui, actualizarea schimbarilor in repositoriul local.
-</dt>
+<dt>Ia o copie a repozitoriului şi trimite modificările înapoi.</dt>
 <dd>
 <div class="listingblock">
 <div class="content">
@@ -568,55 +435,17 @@ $ git gc --prune <b>(7)</b>
 $ git fetch --tags <b>(8)</b></tt></pre>
 </div></div>
 <ol>
-<li>
-<p>
-repetaţi in caz că e nevoie.
-</p>
-</li>
-<li>
-<p>
-extrageţi patch-uri din ramura DVS pentru a trimite prin e-mail.
-</p>
-</li>
-<li>
-<p>
-<tt>git pull</tt> descarcă schimbările implicit implicit de la <tt>origine</tt> şi le uneşte cu
-ramura curentă.
-</p>
-</li>
-<li>
-<p>
-imediat după descărcare, vedeţi schimbările făcute în repositoriul central
-începînd cu ultima data cînd aţi verificat, numai în
-zona de care suntem interesaţi.
-</p>
-</li>
-<li>
-<p>
-descarcă schimbări dintr-o ramură anume a unui repozitoriu concret şi uneşte.
-</p>
-</li>
-<li>
-<p>
-anulează descărcarea.
-</p>
-</li>
-<li>
-<p>
-garbage collect leftover objects from reverted pull.
-</p>
-</li>
-<li>
-<p>
-din cînd în cînd, scoateţi tag-uri oficiale de la <tt>origine</tt>
-şi salvaţi-le sub <tt>.git/refs/tags/</tt>.
-</p>
-</li>
+<li><p>Ciclu normal de dezvoltare repetat de una sau mai multe ori.</p></li>
+<li><p>Extrage modificările în formă de patch pentru a fi trimise pe e-mail.</p></li>
+<li><p><tt>git pull</tt> actualizează ramura curentă.</p></li>
+<li><p>Verifică ce s-a actualizat în directorul indicat.</p></li>
+<li><p>Aduce dintr-o ramură anume a unui anume repozitoriu şi combină cu repozitoriul curent.</p></li>
+<li><p>Anulează operaţiunea precedentă.</p></li>
+<li><p>Curăţă rămăşiţele de la operaţiunea precedentă.</p></li>
+<li><p>Actualizaţi periodic lista de tag-uri oficiale. Ele se stochează în <tt>.git/refs/tags/</tt>.</p></li>
 </ol>
 </dd>
-<dt>
-Ä‚Ĺ˝mpingeţi în alt repozitoriu.
-</dt>
+<dt>Trimiteţi în alt repozitoriu.</dt>
 <dd>
 <div class="listingblock">
 <div class="content">
@@ -637,43 +466,18 @@ mothership$ git checkout master
 mothership$ git merge satellite/master <b>(5)</b></tt></pre>
 </div></div>
 <ol>
-<li>
-<p>
-maşina mothership are un repozitoriu frotz în directoriul DVS home;
-clonaţi din ea pentru a porni un repozitoriu pe satelite maşina
-satelite.
-</p>
-</li>
-<li>
-<p>
-clonarea setează aceste configurări ale variabilelor implicit(by default).
-Aranjază <tt>git pull</tt> pentru a aduce şi păstra în ramura maşinii mothership
-în ramurile locale  <tt>remotes/origin/*</tt> de urmărire.
-</p>
-</li>
-<li>
-<p>
-aranjază <tt>git push</tt> pentru a împinge ramura locală <tt>master</tt> în
-<tt>remotes/satellite/master</tt> ramura maşinii mothership.
-</p>
-</li>
-<li>
-<p>
-împingerea v-a ascunde lucrul nostru pe ramura <tt>remotes/satellite/master</tt>
-de urmărire pe maşina mothership.  Aţi putea folosi aceasta ca o metodă back-up.
-</p>
-</li>
-<li>
-<p>
-pe maşina mothership, fuzionaţi lucrul terminat pe satelit
-în ramura master.
-</p>
-</li>
+<li><p>Copiază repozitoriul <tt>frotz</tt> de pe maşina <tt>mothership</tt>.</p></li>
+<li><p>Clonarea face aceste setări ale variabilelor implicit (by default).
+Configurează <tt>git pull</tt> pentru a aduce şi stoca ramificările de pe <tt>mothership</tt>
+în <tt>remotes/origin/*</tt>.</p></li>
+<li><p>Configurează <tt>git push</tt> să trimită modificările din ramificarea locală <tt>master</tt> în <tt>remotes/satellite/master</tt> pe <tt>mothership</tt>.</p></li>
+<li><p>Modificările curente vor f itrimise în <tt>remotes/satellite/master</tt>
+pe <tt>mothership</tt>. Această manevră poate fi folosită ca o metodă de back-up.
+</p></li>
+<li><p>Pe maşina <tt>mothership</tt>, fuzionaţi lucrul terminat pe <tt>satelit</tt> în ramificarea principală.</p></li>
 </ol>
 </dd>
-<dt>
-Ramura unui tag specific.
-</dt>
+<dt>Crearea unei ramificări marcate cu o etichetă</dt>
 <dd>
 <div class="listingblock">
 <div class="content">
@@ -684,62 +488,30 @@ $ git format-patch -k -m --stdout v2.6.14..private2.6.14 |
   git am -3 -k <b>(2)</b></tt></pre>
 </div></div>
 <ol>
-<li>
-<p>
-crează o ramură privată bazată pe bine cunoscutul
-tag.
-</p>
-</li>
-<li>
-<p>
-forward port toate schimbările din ramura <tt>private2.6.14</tt>, în ramura <tt>master</tt>
-fără o "fuziune" formală.
-</p>
-</li>
+<li><p>Crează o versiunea privată a repozitoriului.</p></li>
+<li><p>Trimite toate schimbările din ramura <tt>private2.6.14</tt>, în ramura <tt>master</tt>
+fără o "fuziune" formală.</p></li>
 </ol>
 </dd>
 </dl>
 </div>
-<h2>Integrator<a id="Integrator"></a></h2>
+
+<h2>Comenzi pentru integrator<a id="Integrator"></a></h2>
+
 <div class="sectionbody">
-<p>O persoană activează ca integrator într-un proiect
-şi primeşte schimbările făcute de alţii, le revede şi integrează
-şi publică rezultatul pentru alţii pentru folosire, folosid aceste
-comenzi împreună cu acele ce sînt cerute de alţi participanţi.</p>
+<p>Integratorul într-un proiect primeşte schimbările făcute de echipă, le revizuieşte, le integrează şi publică rezultatul. În afară de comenzile folosite de ceilalţi, el mai are
+nevoie de următoarele comenzi.</p>
 <ul>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-am.html">git-am(1)</a> pentru a aplica patch-uri trimise prin e-mail
-   de la contributori.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-pull.html">git-pull(1)</a> to merge from your trusted lieutenants.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-format-patch.html">git-format-patch(1)</a> to prepare and send suggested
-    alternative to contributors.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-revert.html">git-revert(1)</a> to undo botched commits.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-push.html">git-push(1)</a> to publish the bleeding edge.
-</p>
-</li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-am.html">git-am(1)</a> Extrage şi integrează patch-urile primite pe e-mail.</p></li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-pull.html">git-pull(1)</a> Aduce modificările de la alţi membri şi le integrează în ramificarea curentă.</p></li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-format-patch.html">git-format-patch(1)</a> Pregăteşte patch-urile pentru a fi trimise pe e-mail.</p></li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-revert.html">git-revert(1)</a> Anulează un commit în caz de necesitate.</p></li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-push.html">git-push(1)</a> Trimite/publică ramificare curentă.</p></li>
 </ul>
-<h3>Examples</h3>
+
+<h3>Exemple</h3>
 <dl>
-<dt>
-My typical GIT day.
-</dt>
+<dt>Comenzi de zi cu zi pentru integrator</dt>
 <dd>
 <div class="listingblock">
 <div class="content">
@@ -765,62 +537,18 @@ $ git push ko <b>(12)</b>
 $ git push ko v0.99.9x <b>(13)</b></tt></pre>
 </div></div>
 <ol>
-<li>
-<p>
-vezi ce făceam eu, dacă făceam ceva.
-</p>
-</li>
-<li>
-<p>
-vezi ce ramuri topic am eu şi cît de pregătite sunt ele.
-</p>
-</li>
-<li>
-<p>
-citeşte mail-uri, salvează cele ce sunt aplicabile, şi salvează altele 
-care nu sînt chiar pregătite.
-</p>
-</li>
-<li>
-<p>
-aplică-le, interactiv, cu sign-offs.
-</p>
-</li>
-<li>
-<p>
-crează ramură topic cum se cere şi aplică, iarăşi cu sign-offs.
-</p>
-</li>
-<li>
-<p>
-rebase internal topic branch care nu a fost fuzionată cu ramura
-master, sau expuse ca parte a unei ramure stabile.
-</p>
-</li>
-<li>
-<p>
-restart <tt>pu</tt> de fiecare dată de la următorul.
-</p>
-</li>
-<li>
-<p>
-şi teancul de ramuri topic încă în gătire.
-</p>
-</li>
-<li>
-<p>
-backport a critical fix.
-</p>
-</li>
-<li>
-<p>
-create a signed tag.
-</p>
-</li>
-<li>
-<p>
-mă asigur că nu am întors accidental ramura master dincolo de ce deja 
-am împins pe GIT.  <tt>ko</tt> stenografiază punctele în repozitoriul meu
+<li><p>Văd starea curentă a repozitoriului.</p></li>
+<li><p>Văd ramificările curente.</p></li>
+<li><p>Verific cutia poştală şi repartizez patch-urile primite.</p></li>
+<li><p>Le aplic interactiv şi adaug semnătura mea.</p></li>
+<li><p>Creez o ramificare, aplic cealaltă parte de patch-uri şi adaug semnătura mea.</p></li>
+<li><p>Trec una din ramificarile locale pe pe ramificarea de bază.</p></li>
+<li><p>Trec pe ramificarea <tt>pu</tt> la starea <tt>next</tt>.</p></li>
+<li><p>Combin ramificările pregătite.</p></li>
+<li><p>Aduc un fix important dintr-o versiune anterioară.</p></li>
+<li><p>Fac o etichetă.</p></li>
+<li><p>Mă asigur că nu am întors accidental ramura <tt>master</tt> dincolo de ce era deja 
+publicat. Ramura <tt>ko</tt> e o scurtătură pentru ce am în repozitoriul meu
 la kernel.org, şi arată cam aşa:
 </p>
 <div class="listingblock">
@@ -835,49 +563,29 @@ Push: next
 Push: +pu
 Push: maint</tt></pre>
 </div></div>
-<p>Spre afişare din <tt>git show-branch</tt>, <tt>master</tt> ar trebui să aibă
-orice <tt>ko-master</tt> are, şi <tt>next</tt> ar trebui să aibă
-orice <tt>ko-next</tt> are.</p>
-</li>
-<li>
-<p>
-push out the bleeding edge.
-</p>
-</li>
-<li>
-<p>
-push the tag out, too.
-</p>
-</li>
+<p>În lista afişată de <tt>git show-branch</tt>, <tt>master</tt> ar trebui să aibă
+tot ce are <tt>ko-master</tt>, şi <tt>next</tt> ar trebui să aibă
+tot ce are <tt>ko-next</tt>.</p></li>
+<li><p>Publică cea mai recentă versiune.</p></li>
+<li><p>Publică şi eticheta creată.</p></li>
 </ol>
 </dd>
 </dl>
 </div>
-<h2>Repository Administration<a id="Repository Administration"></a></h2>
+
+<h2>Administrarea repozitoriului<a id="Administrarea_repozitoriului"></a></h2>
+
 <div class="sectionbody">
-<p>Administrator al repozitoriului foloseşte urmăatoarele unelte pentru a seta
-şi a menţine accesul la repozitoriu de către developeri.</p>
+<p>Administratorul repozitoriului foloseşte comenzile următoare pentru a seta menţine accesul la repozitoriu pentru brogramatori.</p>
 <ul>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-daemon.html">git-daemon(1)</a> pentru a lăsa anonimii să descarce din
-    repozitoriu.
-</p>
-</li>
-<li>
-<p>
-<a href="http://www.kernel.org/pub/software/scm/git/docs/git-shell.html">git-shell(1)</a> poate fi folosit ca <em>restricted login shell</em>
-    pentru a împărţi repozitoriul central cu alţi utilizatori.
-</p>
-</li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-daemon.html">git-daemon(1)</a> pentru a permite accesul la repozitoriu.</p></li>
+<li><p><a href="http://www.kernel.org/pub/software/scm/git/docs/git-shell.html">git-shell(1)</a> poate fi folosit ca shell SSH pentru access-ul la repozitoriu.</p></li>
 </ul>
-<p><a href="http://www.kernel.org/pub/software/scm/git/docs/howto/update-hook-example.txt">update hook howto</a> are un bun 
-exemplu de a conduce un repozitoriu central.</p>
-<h3>Example</h3>
+<p><a href="http://www.kernel.org/pub/software/scm/git/docs/howto/update-hook-example.txt">update hook howto</a> este un exemplu bun de menţinere a unui repozitoriu.</p>
+
+<h3>Exemple</h3>
 <dl>
-<dt>
-Noi presupunem următoarele în /etc/services
-</dt>
+<dt>Se presupune că există următoarea linie în <tt>/etc/services</tt></dt>
 <dd>
 <div class="listingblock">
 <div class="content">
@@ -885,9 +593,8 @@ Noi presupunem următoarele în /etc/services
 git             9418/tcp                # Git Version Control System</tt></pre>
 </div></div>
 </dd>
-<dt>
-Rulaţi git-daemon pentru serivrea /pub/scm from inetd.
-</dt>
+
+<dt>Lansaţi serverul git din <tt>inetd</tt> pentru publicarea directorului <tt>/pub/scm</tt>.</dt>
 <dd>
 <div class="listingblock">
 <div class="content">
@@ -895,11 +602,10 @@ Rulaţi git-daemon pentru serivrea /pub/scm from inetd.
 git     stream  tcp     nowait  nobody \
   /usr/bin/git-daemon git-daemon --inetd --export-all /pub/scm</tt></pre>
 </div></div>
-<p>Linia actuală de configurare ar trebui să fie una.</p>
+<p>(De fapt e o singură linie)</p>
 </dd>
-<dt>
-Rulaţi git-daemon pentru servirea /pub/scm din xinetd.
-</dt>
+
+<dt>Lansaţi serverul git din <tt>xinetd</tt> pentru publicarea directorului <tt>/pub/scm</tt>.</dt>
 <dd>
 <div class="listingblock">
 <div class="content">
@@ -919,12 +625,10 @@ service git
         log_on_failure  += USERID
 }</tt></pre>
 </div></div>
-<p>Verificaţi documentarea xinetd(8) şi instalarea, acesta este din sistemul Fedora.
-Altele ar putea fi diferite.</p>
+<p>Acesta este configurarea pentru Fedora. Vedeţi documentaţia xinetd(8) pentru alte sisteme de operare.</p>
 </dd>
-<dt>
-Daţi acces push/pull only developerilor.
-</dt>
+
+<dt>Daţi acces de push/pull pentru programatori.</dt>
 <dd>
 <div class="listingblock">
 <div class="content">
@@ -937,24 +641,13 @@ $ grep git /etc/shells <b>(2)</b>
 /usr/bin/git-shell</tt></pre>
 </div></div>
 <ol>
-<li>
-<p>
-log-in shell e setat la /usr/bin/git-shell, care nu permite
-nimic în afară de <tt>git push</tt> şi <tt>git pull</tt>.  Utilizatorul ar trebui
-să ia un ssh acces la maşină.
-</p>
-</li>
-<li>
-<p>
-în multe distribuţii /etc/shells are nevoie să listeze ce este folosit
-ca shell pentru login.
-</p>
-</li>
+<li><p>Shell-ul de log-in e setat la /usr/bin/git-shell, care nu permite
+nimic în afară de <tt>git push</tt> şi <tt>git pull</tt>.</p></li>
+<li><p>în multe distribuţii <tt>/etc/shells</tt> trebuie să conţină căile spre shell-uri.</p></li>
 </ol>
 </dd>
-<dt>
-Repozitoriu CVS-style.
-</dt>
+
+<dt>Repozitoriu în stil CVS.</dt>
 <dd>
 <div class="listingblock">
 <div class="content">
@@ -980,34 +673,17 @@ refs/heads/doc-update   bob
 refs/tags/v[0-9]*       david</tt></pre>
 </div></div>
 <ol>
-<li>
-<p>
-plasează developerii în acelaşi grup git.
-</p>
-</li>
-<li>
-<p>
-şi face repozitoriu shared fiind disponibil pentru inregistrări.
-</p>
-</li>
-<li>
-<p>
-folosiţi exemplul update-hook al lui Carl din Documentation/howto/
-pentru ramuri policy control.
-</p>
-</li>
-<li>
-<p>
-alice şi cindy pot împinge în master, numai bob poate împinge în doc-update.
-david este managerul de release (eliberare) şi este unica persoană care poate
-cera şi împinge tag-uri (version tags).
-</p>
-</li>
+<li><p>Pune programatorii în grupul <tt>git</tt>.</p></li>
+<li><p>Şi dă acces de scriere în repozitoriu pentru acest grup.</p></li>
+<li><p>Folosiţi exemplul update-hook al lui Carl din Documentation/howto/
+pentru a stabili polica de acces la ramificări.</p></li>
+<li><p>alice şi cindy pot publica în master, numai bob poate publica în doc-update.
+david este managerul de release şi este unica persoană care poate
+crea şi publica tag-uri.</p></li>
 </ol>
 </dd>
-<dt>
-HTTP server pentru suport dumb protocol transfer.
-</dt>
+
+<dt>Server HTTP pentru transfer simplu.</dt>
 <dd>
 <div class="listingblock">
 <div class="content">
@@ -1016,23 +692,10 @@ dev$ ftp user@isp.example.com <b>(2)</b>
 ftp&gt; cp -r .git /home/user/myproject.git</tt></pre>
 </div></div>
 <ol>
-<li>
-<p>
-fiţi siguri că info/refs şi obiectele/info/pachete sînt noi
-</p>
-</li>
-<li>
-<p>
-upload pe server HTTP server hostat de ISP DVS.
-</p>
-</li>
+<li><p>Asiguraţi-vă că <tt>info/refs</tt> şi <tt>obiectele/info/pachete</tt> sînt actualizate.</p></li>
+<li><p>Încărcaţi directorul pe serverul HTTP.</p></li>
 </ol>
 </dd>
 </dl>
-</div>
-<div id="footer">
-<div id="footer-text">
-Last updated 21-Dec-2007 17:57:00 UTC
-</div>
 </div>
 </body></html>
