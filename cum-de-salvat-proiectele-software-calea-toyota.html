@@ -1,0 +1,1056 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.5.1" />
+<title>Cum de salvat proiectele software: Calea Toyota</title>
+<style type="text/css">
+/* Debug borders */
+p, li, dt, dd, div, pre, h1, h2, h3, h4, h5, h6 {
+/*
+  border: 1px solid red;
+*/
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: fuchsia;
+}
+
+em {
+  font-style: italic;
+  color: navy;
+}
+
+strong {
+  font-weight: bold;
+  color: #083194;
+}
+
+tt {
+  color: navy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  font-family: sans-serif;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1, h2, h3 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  padding-top: 0.5em;
+}
+h3 {
+  float: left;
+}
+h3 + * {
+  clear: left;
+}
+
+div.sectionbody {
+  font-family: serif;
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul, ol, li > p {
+  margin-top: 0;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+span#author {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+span#email {
+}
+span#revnumber, span#revdate, span#revremark {
+  font-family: sans-serif;
+}
+
+div#footer {
+  font-family: sans-serif;
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+div#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+div#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+div#preamble {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.tableblock, div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-top: 0.25em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+
+div.listingblock > div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock {
+  padding-left: 2.0em;
+  margin-right: 10%;
+}
+div.quoteblock > div.attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock {
+  padding-left: 2.0em;
+  margin-right: 10%;
+}
+div.verseblock > div.content {
+  white-space: pre;
+}
+div.verseblock > div.attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+/* DEPRECATED: Pre version 8.2.7 verse style literal block. */
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 2px solid silver;
+}
+
+div.exampleblock > div.content {
+  border-left: 2px solid silver;
+  padding: 0.5em;
+}
+
+div.imageblock div.content { padding-left: 0; }
+span.image img { border-style: none; }
+a.image:visited { color: white; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: normal;
+  color: navy;
+}
+dd > *:first-child {
+  margin-top: 0.1em;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+ol.arabic {
+  list-style-type: decimal;
+}
+ol.loweralpha {
+  list-style-type: lower-alpha;
+}
+ol.upperalpha {
+  list-style-type: upper-alpha;
+}
+ol.lowerroman {
+  list-style-type: lower-roman;
+}
+ol.upperroman {
+  list-style-type: upper-roman;
+}
+
+div.compact ul, div.compact ol,
+div.compact p, div.compact p,
+div.compact div, div.compact div {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+div.tableblock > table {
+  border: 3px solid #527bbd;
+}
+thead {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+tfoot {
+  font-weight: bold;
+}
+td > div.verse {
+  white-space: pre;
+}
+p.table {
+  margin-top: 0;
+}
+/* Because the table frame attribute is overriden by CSS in most browsers. */
+div.tableblock > table[frame="void"] {
+  border-style: none;
+}
+div.tableblock > table[frame="hsides"] {
+  border-left-style: none;
+  border-right-style: none;
+}
+div.tableblock > table[frame="vsides"] {
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+
+div.hdlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+div.hdlist tr {
+  padding-bottom: 15px;
+}
+dt.hdlist1.strong, td.hdlist1.strong {
+  font-weight: bold;
+}
+td.hdlist1 {
+  vertical-align: top;
+  font-style: normal;
+  padding-right: 0.8em;
+  color: navy;
+}
+td.hdlist2 {
+  vertical-align: top;
+}
+div.hdlist.compact tr {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.comment {
+  background: yellow;
+}
+
+.footnote, .footnoteref {
+  font-size: 0.8em;
+}
+
+span.footnote, span.footnoteref {
+  vertical-align: super;
+}
+
+#footnotes {
+  margin: 20px 0 20px 0;
+  padding: 7px 0 0 0;
+}
+
+#footnotes div.footnote {
+  margin: 0 0 5px 0;
+}
+
+#footnotes hr {
+  border: none;
+  border-top: 1px solid silver;
+  height: 1px;
+  text-align: left;
+  margin-left: 0;
+  width: 20%;
+  min-width: 100px;
+}
+
+
+@media print {
+  div#footer-badges { display: none; }
+}
+
+div#toctitle {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.toclevel2 {
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+div.toclevel3 {
+  margin-left: 4em;
+  font-size: 0.9em;
+}
+div.toclevel4 {
+  margin-left: 6em;
+  font-size: 0.9em;
+}
+/* Workarounds for IE6's broken and incomplete CSS2. */
+
+div.sidebar-content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+div.sidebar-title, div.image-title {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 0.0em;
+  margin-bottom: 0.5em;
+}
+
+div.listingblock div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock-attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock-content {
+  white-space: pre;
+}
+div.verseblock-attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+
+div.exampleblock-content {
+  border-left: 2px solid silver;
+  padding-left: 0.5em;
+}
+
+/* IE6 sets dynamically generated links as visited. */
+div#toc a:visited { color: blue; }
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+window.onload = function(){asciidoc.footnotes(); asciidoc.toc(2);}
+var asciidoc = {  // Namespace.
+
+/////////////////////////////////////////////////////////////////////
+// Table Of Contents generator
+/////////////////////////////////////////////////////////////////////
+
+/* Author: Mihai Bazon, September 2002
+ * http://students.infoiasi.ro/~mishoo
+ *
+ * Table Of Content generator
+ * Version: 0.4
+ *
+ * Feel free to use this script under the terms of the GNU General Public
+ * License, as long as you do not remove or alter this notice.
+ */
+
+ /* modified by Troy D. Hanson, September 2006. License: GPL */
+ /* modified by Stuart Rackham, 2006, 2009. License: GPL */
+
+// toclevels = 1..4.
+toc: function (toclevels) {
+
+  function getText(el) {
+    var text = "";
+    for (var i = el.firstChild; i != null; i = i.nextSibling) {
+      if (i.nodeType == 3 /* Node.TEXT_NODE */) // IE doesn't speak constants.
+        text += i.data;
+      else if (i.firstChild != null)
+        text += getText(i);
+    }
+    return text;
+  }
+
+  function TocEntry(el, text, toclevel) {
+    this.element = el;
+    this.text = text;
+    this.toclevel = toclevel;
+  }
+
+  function tocEntries(el, toclevels) {
+    var result = new Array;
+    var re = new RegExp('[hH]([2-'+(toclevels+1)+'])');
+    // Function that scans the DOM tree for header elements (the DOM2
+    // nodeIterator API would be a better technique but not supported by all
+    // browsers).
+    var iterate = function (el) {
+      for (var i = el.firstChild; i != null; i = i.nextSibling) {
+        if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
+          var mo = re.exec(i.tagName);
+          if (mo)
+            result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
+          iterate(i);
+        }
+      }
+    }
+    iterate(el);
+    return result;
+  }
+
+  var toc = document.getElementById("toc");
+  var entries = tocEntries(document.getElementById("content"), toclevels);
+  for (var i = 0; i < entries.length; ++i) {
+    var entry = entries[i];
+    if (entry.element.id == "")
+      entry.element.id = "_toc_" + i;
+    var a = document.createElement("a");
+    a.href = "#" + entry.element.id;
+    a.appendChild(document.createTextNode(entry.text));
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
+  }
+  if (entries.length == 0)
+    toc.parentNode.removeChild(toc);
+},
+
+
+/////////////////////////////////////////////////////////////////////
+// Footnotes generator
+/////////////////////////////////////////////////////////////////////
+
+/* Based on footnote generation code from:
+ * http://www.brandspankingnew.net/archive/2005/07/format_footnote.html
+ */
+
+footnotes: function () {
+  var cont = document.getElementById("content");
+  var noteholder = document.getElementById("footnotes");
+  var spans = cont.getElementsByTagName("span");
+  var refs = {};
+  var n = 0;
+  for (i=0; i<spans.length; i++) {
+    if (spans[i].className == "footnote") {
+      n++;
+      // Use [\s\S] in place of . so multi-line matches work.
+      // Because JavaScript has no s (dotall) regex flag.
+      note = spans[i].innerHTML.match(/\s*\[([\s\S]*)]\s*/)[1];
+      noteholder.innerHTML +=
+        "<div class='footnote' id='_footnote_" + n + "'>" +
+        "<a href='#_footnoteref_" + n + "' title='Return to text'>" +
+        n + "</a>. " + note + "</div>";
+      spans[i].innerHTML =
+        "[<a id='_footnoteref_" + n + "' href='#_footnote_" + n +
+        "' title='View footnote' class='footnote'>" + n + "</a>]";
+      var id =spans[i].getAttribute("id");
+      if (id != null) refs["#"+id] = n;
+    }
+  }
+  if (n == 0)
+    noteholder.parentNode.removeChild(noteholder);
+  else {
+    // Process footnoterefs.
+    for (i=0; i<spans.length; i++) {
+      if (spans[i].className == "footnoteref") {
+        var href = spans[i].getElementsByTagName("a")[0].getAttribute("href");
+        href = href.match(/#.*/)[0];  // Because IE return full URL.
+        n = refs[href];
+        spans[i].innerHTML =
+          "[<a href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+      }
+    }
+  }
+}
+
+}
+/*]]>*/
+</script>
+</head>
+<body style="max-width:55em">
+<div id="header">
+<h1>Cum de salvat proiectele software: Calea Toyota</h1>
+<span id="author">Andriy Solovey</span><br />
+<span id="revdate">Nov 2009</span>
+<br /><span id="revremark">Traducere, original: <a href="http://softwarecreation.org/2009/how-to-rescue-failing-software-projects-toyota-way/">http://softwarecreation.org/2009/how-to-rescue-failing-software-projects-toyota-way/</a></span>
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph"><p>Managerul trânteşte uşa şi ne zice că suntem în belea. Clienţii noştri
+vechi se plâng de multe bug-uri şi performanţe proaste, clienţii noi
+se plâng pe întârzieri şi lipsă de dedicaţie. Și, colac peste pupăză,
+top managementul consideră departamentul nostru financiar nejustificat şi
+vrea să reducă serios cheltuielile.
+Managerul ne mai zice că suntem programatori geniali, că lucrăm asiduu şi creăm soluţii software cool.
+Dar există ceva greşit şi nu mai putem continua sa lucrăm
+aşa.</p></div>
+<div class="paragraph"><p>Anxietatea a început sa ne penetreze sufletele. Ştim unde e
+greșeala: nu ne ajung oameni în echipă, ne-am asumat prea multe
+angajamente, codul se transformă într-o mizerie mare, tehnologia nouă
+şi versiunea nouă de software fac ceva rău cu serverele. Un bulgăre de
+zăpadă compus din diferite probleme ne face să fim stresaţi, distraţi
+şi incapabili de lucru productiv.</p></div>
+<div class="paragraph"><p>Cum ar putea proceda managerul după aceasta?</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+<strong>Neîncredere</strong>. Devine dictator, ia decizii de sine stătător, inclusiv
+angajează consultanţi din afară ca să recomande ce e de făcut sau
+poate chiar să ne înlocuiască. Totuşi,
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+suntem programatori buni şi ne cunoaştem treaba bine – <strong>nu lipsa de abilităţi şi cunoştinţe</strong> este problema.
+</p>
+</li>
+<li>
+<p>
+cuiva din afară i-ar lua mult timp ca să înţeleagă sistemul şi <strong>ei vor avea o altă motivaţie</strong> şi nu le va păsa de succesul pe termen lung.
+</p>
+</li>
+<li>
+<p>
+oamenii vor fi <strong>descurajați</strong> și managerul nu poate lua decizii eficiente fără implicarea activă a echipei.
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+<strong>Încredere</strong>. Va învesti echipa cu putere deplină de a
+rezolva problemele şi de a lua decizii proprii în speranţa că oamenii
+deştepţi, motivaţia bună şi expertiza tehnică pot face minuni. Oricum,
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+este greu de adoptat o viziunea proaspătă și gândire nestandardă
+atunci când echipa e scufundată într-o situație dificilă <strong>de mai mult timp</strong>.
+</p>
+</li>
+<li>
+<p>
+s-ar putea ca o echipă să nu aibă înțelegere și <strong>control asupra forțelor externe</strong> : management, clienți, finanțe.
+</p>
+</li>
+<li>
+<p>
+<strong>schimbarea realității este un proces dur</strong> (mai ales în mințile oamenilor) și necesită mai mult decât doar experiență tehnică.
+</p>
+</li>
+</ul></div>
+</li>
+</ul></div>
+<div class="paragraph"><p>Există o a treia cale. Plasați practicile de îmbunătățire în centrul procesului de dezvoltare. Faceți din auto-îmbunătățire un lucru inevitabil și necesar oricărei activități. Faceți-o în fiecare zi.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="images/process-improvement-toyota-way.jpg" alt="Calea Toyota" />
+</div>
+</div>
+<div class="paragraph"><p>Dintre cele mai sigure procese ample de auto-îmbunătățire <strong>Calea Toyota</strong> reprezintă cel mai bun exemplu. Aceasta se concentrează pe eliminarea risipei, rezolvarea problemelor de la origine și luarea deciziilor corecte. Calea Toyota reduce problemele, crește eficiența internă și face compania una de succes. Acesta este cel mai bun remediu de ieșire din criză.</p></div>
+<div class="paragraph"><p><strong>Obiective:</strong></p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+<strong>Probleme</strong> – situații de urgență, focare care necesită soluționare imediată: bug-uri, căderea serverului, expirarea datei limite.
+</p>
+</li>
+<li>
+<p>
+<strong>Risipe</strong> – activități ineficiente și fără valoare adăugată: așteptarea, dezinformarea, stresul.
+</p>
+</li>
+<li>
+<p>
+<strong>Provocări</strong> – adaptarea la forţele externe (piaţa, concurenţii, clienţii, societatea): noi tendinţe şi tehnologii, modificări în așteptările utilizatorilor referitor la interfață și funcționalitate.
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<h2 id="_practicile_de_depistare_a_risipei_i_stoparea_rezolv_rii_problemelor">Practicile de depistare a risipei și stoparea rezolvării problemelor</h2>
+<div class="sectionbody">
+<h3 id="_depistarea_risipei">Depistarea risipei</h3><div style="clear:left"></div>
+<div class="paragraph"><p>Echipa și managerii ar trebui să învețe să identifice sarcinile: problemele adevărate și risipile. În caz contrar, îmbunătățirile vor fi împușcături în întuneric.</p></div>
+<div class="paragraph"><p>Există mai multe obiective în dezvoltarea software-ului:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+oameni stresați – energie redusă, productivitate scăzută, un număr mai mare de greșeli
+</p>
+</li>
+<li>
+<p>
+așteptări – întârzieri, instrumente/probleme de sistem și nefuncționare, pană de capacitate (așteptarea rezultatelor muncii altor oameni)
+</p>
+</li>
+<li>
+<p>
+supra-inginerie – producând caracteristici și design complicat fără necesitate reală
+</p>
+</li>
+<li>
+<p>
+lucru nefinisat – funcționalitate neutilizată în sistemul viu, aflată, probabil, încă în construcție sau în curs de elaborare sau pur și simplu abandonată (dar nu eliminată)
+</p>
+</li>
+<li>
+<p>
+defecte – irosire completă de timp și bani
+</p>
+</li>
+<li>
+<p>
+creativitate neutilizată – pierdere de timp, idei, abilități, îmbunătățiri și învățare din cauza faptului că nu implicați sau ascultați angajații dumneavoastră
+</p>
+</li>
+<li>
+<p>
+informații neadecvate – neclare, care induc în eroare sau pur și simplu informație eronată care cauzează activitate inutilă și conduce într-un sfârșit la refacere
+</p>
+</li>
+<li>
+<p>
+supra-procesare – luarea de măsuri inutile pentru construirea software-ului din cauza insuficienței proceselor și a design-ului sistemului, suspendării, birocrației, conformării, instrumentelor greoaie
+</p>
+</li>
+<li>
+<p>
+mișcare – efortul necesar pentru a obține informația, sisteme de acces sau instrumente de utilizare
+</p>
+</li>
+<li>
+<p>
+multi-tasking – pierdere de timp pentru a comuta între proiecte, sarcini sau diferite activități
+</p>
+</li>
+</ul></div>
+<h3 id="_jidoka_nceta_i_de_a_rezolva_problema_pentru_a_ob_ine_calitate_din_prima">Jidoka – încetați de a rezolva problema pentru a obține calitate din prima</h3><div style="clear:left"></div>
+<div class="paragraph"><p>Nu este îndeajuns să cunoașteți sarcinile dvs. Echipa ar trebui să execute ordinul de a trage în țintă imediat. În caz contrar, cele mai bune intenții vor fi îngropate sub avalanșa crescândă a problemelor.</p></div>
+<div class="paragraph"><p>Cum să încetezi:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+calitatea pentru clienți conduce toate procesele – previne patch-urile temporare și deciziile proaste vis-a-vis de calitate
+</p>
+</li>
+<li>
+<p>
+toleranța scăzută față de problemele calității și imediata lor detectare reprezintă principiul de bază al muncii
+</p>
+</li>
+<li>
+<p>
+utilizarea Andon – un  sistem care semnalizează pentru ajutor,
+</p>
+</li>
+<li>
+<p>
+înștiințează despre o problemă și stopează procesul de producție
+</p>
+</li>
+<li>
+<p>
+axarea pe capacitățile instrumentelor și a procesului de detectare a problemelor și de stopare a acestuia
+</p>
+</li>
+<li>
+<p>
+utilizarea tututor metodelor moderne de QA disponibile
+</p>
+</li>
+<li>
+<p>
+managerii încurajează oprirea procesului de soluționare a problemelor și sprijină implimentarea măsurilor de contra-atac
+</p>
+</li>
+</ul></div>
+</div>
+<h2 id="_luarea_deciziilor">Luarea deciziilor</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Calea Toyota- <em>”Luați deciziile încet, prin consens și temeinic, luând în considerație toate opțiunile, implementați rapid.”</em></p></div>
+<div class="paragraph"><p>Chiar cunoscând problemele și fiind dedicată soluționării lor, Echipa ar trebui să ia decizii corecte întru soluționare.</p></div>
+<div class="paragraph"><p><strong>Ia deciziile lent</strong></p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+Du-te și vezi (Genchi Genbutsu)
+</p>
+</li>
+<li>
+<p>
+Înțelege cauzele fundamentale (Kaizen)
+</p>
+</li>
+<li>
+<p>
+Consideră în linii mari toate soluțiile alternative și dezvoltă pentru soluțiile alese  o argumentare detaliată, amânând anumite decizii maximum posibil (Set-Based concurrent engineering)
+</p>
+</li>
+<li>
+<p>
+Realizarea unui consens în cadrul echipei și a partenerilor în cazul în care decizia de grup e preferată (în timp ce managementul poate interveni dacă consensul nu este atins)
+</p>
+</li>
+<li>
+<p>
+Utilizează dispozitive eficiente de comunicare – de preferință o singură parte a foii
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p><strong>Implementează rapid</strong></p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+Implimentează soluții și contra-măsuri
+</p>
+</li>
+<li>
+<p>
+Evaluează rezultatele
+</p>
+</li>
+<li>
+<p>
+Standardizează în cazul când soluțiile sunt efective
+</p>
+</li>
+</ul></div>
+</div>
+<h2 id="_practici_pentru_eliminarea_risipei_i_solu_ionarea_problemelor">Practici pentru eliminarea risipei și soluționarea problemelor</h2>
+<div class="sectionbody">
+<h3 id="_strong_genchi_genbutsu_strong_du_te_i_vezi_tu_nsu_i_pentru_a_n_elege_complet_situa_ia"><strong>Genchi Genbutsu</strong> – du-te și vezi  tu însuți pentru a înțelege complet situația</h3><div style="clear:left"></div>
+<div class="paragraph"><p>Cât de des facem  concluzii bazate pe informație parțială, ipoteze
+vagi sau spusele altora?  Informația creează realitate în mintea ta,
+aceasta realitate servind drept bază pentru deciziile tale. Deci, tu
+și echipa ta ar trebui să obțineți informații juste pentru a lua
+decizii corecte:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+du observații cu mintea limpede
+</p>
+</li>
+<li>
+<p>
+evită ipoteze și idei preconcepute
+</p>
+</li>
+<li>
+<p>
+utilizează informația verificată personal
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Într-un cuvânt, întemeiază deciziile pe ceea ce se întâmplă cu adevărat.</p></div>
+<h3 id="_strong_kaizen_5_de_ce_uri_strong_nv_are_i_mbun_t_ire_continu"><strong>Kaizen (5 de ce-uri)</strong> – învățare și îmbunătățire continuă</h3><div style="clear:left"></div>
+<div class="paragraph"><p><em>”Noi privim erorile ca oportunități de învățare”</em> – Calea Toyota</p></div>
+<div class="paragraph"><p>Echipa ar trebui să găsească originea problemelor. Kaizen ajută la găsirea acestora prin întrebarea repetată “de ce apare problema?“</p></div>
+<div class="paragraph"><p>Exemplu de Kaizen
+Problemă: există erori JavaScript persistente pe un site din producție</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+De ce? Developer-ul nu a construit corect logica interactiunii componentelor UI pentru complexul web
+</p>
+</li>
+<li>
+<p>
+De ce? Un developer a implimentat propria soluție fără orientare și suficientă experiență în acest domeniu
+</p>
+</li>
+<li>
+<p>
+De ce? Un expert din echipă nu a comunicat despre existența soluțiilor demonstrate, nu a ajutat și împărtășit cunoștințele
+</p>
+</li>
+<li>
+<p>
+De ce? Echipa este supusă stresului, supra-angajată și nu are suficient timp pentru a comunica
+</p>
+</li>
+<li>
+<p>
+De ce? Managerii acceptă prea mult lucru fără a se consulta cu echipa de dezvoltare
+</p>
+</li>
+<li>
+<p>
+De ce? Puteți continua&#8230;
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Kaizen ne obligă să depășim dorința de a găsi o primă explicație
+convenabilă și de a aplana problemele fără rezolvarea cauzelor care
+stau la baza lor. Prin aplicarea neînduratoare a acestei practici, ajungem să înțelegem mai profund realitatea și să învățăm mai bine despre produsele, procesele, oamenii, mediul și instrumentele noastre. Kaizen este o practică de bază pentru depistarea risipei, soluționarea problemelor și îmbunătățirea procesului. Pentru a evita uitarea învățării din Kaizen, este important de a standardiza procesul de îmbunătățire și de a-l situa la baza ulterioarelor îmbunătățiri.</p></div>
+</div>
+<h2 id="_practici_de_sus_inerea_proceselor">Practici de susținerea proceselor</h2>
+<div class="sectionbody">
+<h3 id="_strong_standarde_strong_ast_zi_ti_i_cel_mai_bine_ce_trebuie_s_mbun_t_i_i_m_ine"><strong>Standarde</strong> – astăzi știți cel mai bine ce trebuie să îmbunătățiți mâine</h3><div style="clear:left"></div>
+<div class="paragraph"><p>Lucrul standardizat este mai ușor, mai ieftin și mai rapid - metodele
+stabile repetabile pot menține predictabilitatea, productibilitatea
+înaltă și suportă calitatea.</p></div>
+<div class="paragraph"><p>Standardele efective nu provin din teorie, ci din:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+cele mai bune practici
+</p>
+</li>
+<li>
+<p>
+cunoștințele acumulate și experiența individuală
+</p>
+</li>
+<li>
+<p>
+lecții din aplicarea standardelor existente
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Echipa ar trebui să utilizeze standarde în diverse domenii: faze de proiect și activități, practici de dezvoltare, abordări de arhitectură și design, codul de convenții, tehnici de programare, biblioteci și coduri ale terțelor părți, reutilizarea componentelor și a soluțiilor, testare și așa mai departe.
+Standardizarea în dezvoltarea sofware-ului este un subiect controversat: unii teoreticieni doresc să aducă programarea mai aproape de ingineria supusă standardelor, practicienii însă sunt dornici de a reduce standardizarea la minimum, promavând creativitatea și auto-organizarea. În interpretarea rigidă, standardele sunt reguli care ”trebuie urmate”  în orice situație; în altă interpretare standardele sunt pași bine definiți și linii directoare recomandate în context specific. Eu sunt adeptul ultimei definiții. O echipă productivă ar trebui să dispună de standarde pentru a se axa pe nevoile clienților în locul luptei continue cu aceleași puzzle-uri și probleme. Sistemul de standarde nu ar trebui să fie a un cod greoi de conduită birocratică, dar o carte fluidă și luminoasă de cunoștințe, o carte care conține cele mai utile și importante norme și liste de verificare. Standardele vor fi eficiente dacă acestea sunt minime, revăzute de multe ori (Kaizen) și urmate de fiecare membru al echipei.</p></div>
+<h3 id="_tehnologii_sigure_foarte_bine_testate">Tehnologii sigure foarte bine testate</h3><div style="clear:left"></div>
+<div class="paragraph"><p>Echipa ar trebui să fie conservatoare față de tehnologiile noi. Dezvoltarea software-ului și IT prosperă datorită schimbării și inovației. Cu toate acestea, calea Toyota sugerează să fii conservator în adaptarea tehnologiei și consideră stabilitatea și fiabilitatea operațiunilor obiective mult mai importante decât menținerea în rând cu tehnologia de ultimă oră.</p></div>
+<div class="paragraph"><p>Considerații pentru utilizarea tehnologiei</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+scopul principal este de a îmbunătăți fluxul și de a susține oamenii, procesele și valorile
+</p>
+</li>
+<li>
+<p>
+procesul este condus de afaceri, nu se referă la tehnologii; software-ul și instrumentele nu elimină risipile desinestătător
+</p>
+</li>
+<li>
+<p>
+tehnologia este vizuală și intuitivă – oamenii o pot folosi corect și eficient
+</p>
+</li>
+<li>
+<p>
+procesează manual înainte de a adapta tehnolgia în sprijinul procesului – întelege ce probleme soluționează ea și cum te poate tehnologia ajuta
+</p>
+</li>
+<li>
+<p>
+important: la Kaizen oamenii/procesele sunt simple, mașinile sunt complicate
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Adaptarea la noile tehnologii:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+tehnologia nouă este nesigură și este dicifil de a o standardiza, prin urmare ea pune în pericol fluxul
+</p>
+</li>
+<li>
+<p>
+procesul dovedit are prioritate față de tehnologiile noi și netestate
+</p>
+</li>
+<li>
+<p>
+efectuează teste adevărate înainte de a adapta o tehnologie nouă
+</p>
+</li>
+<li>
+<p>
+respinge tehnologia în cazul în care ea intră în conflict cu cultura
+sau ar putea perturba stabilitatea, fiabilitatea și previzibilitatea
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>În același timp, în căutare de noi abordări, <strong>oamenii trebuie încurajați să ia în considerație tehnologiile noi</strong>. Dacă tehnologia ameliorează procesele și fluxul, după testarea ei minuțioasă, ea trebuie imediat implementată.</p></div>
+<h3 id="_controalele_vizuale">Controalele vizuale</h3><div style="clear:left"></div>
+<div class="paragraph"><p>Echipa ar trebui să aibă un statut clar al informației. Controalele
+vizuale pot transmite creierului nostru informație complexă într-o
+manieră foarte rapidă și eficientă. Putem folosi controalele ca pe o
+istorie narativă pentru utilizator; statutul proiectelor, serverelor
+sau construrii codului; diagramele burndown şi alte lucruri.</p></div>
+<div class="paragraph"><p>Simpli indicatori vizuali ajută oamenii să depisteze imediat dacă au deviat de la standarde, să arate esența situației și direcția de soluționare a problemei.</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+utilizează cei mai importanți și simpli indicatori
+</p>
+</li>
+<li>
+<p>
+apoi oferă o imagine clară pentru decizii și ce e de făcut în continuare
+</p>
+</li>
+<li>
+<p>
+reduce rapoartele la un ecran / o foaie de hîrtie chiar și pentru cele mai importante decizii
+</p>
+</li>
+</ul></div>
+</div>
+<h2 id="_oamenii_conduc_torii_i_echipa">Oamenii, conducătorii și echipa</h2>
+<div class="sectionbody">
+<h3 id="_oamenii">Oamenii</h3><div style="clear:left"></div>
+<div class="paragraph"><p>Oamenii care elaborează software-ul sunt oamenii care ar trebui să
+îmbunătățească procesul. Ei sunt direct implicați și au o experiență
+de prima mână a problemelor și a risipei.
+Calea Toyota pretinde că fiecare membru al echipei poate soluționa problema și că experiența de lucru valorează mai mult decât cunoștințele teoretice. Echipa va depăși oricare consultanți exteriori și va găsi o mai bună modalitate de lucru, dacă membrii ei sunt deschiși pe probleme și dornici de a găsi soluții bune.</p></div>
+<h3 id="_conduc_tori">Conducători</h3><div style="clear:left"></div>
+<div class="paragraph"><p>Echipa are mare nevoie de lideri puternici pentru a crea produse tari, pentru a depăși problemele. Toyota crește lideri care înteleg complet lucrul, trăiesc această psihologie și trebuie să înțeleagă detaliat activitatea de zi cu zi.</p></div>
+<div class="paragraph"><p><strong>Inginerul Șef</strong> este persoana-cheie în proiectele Toyota:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+binecuvântat de managementul de sus
+</p>
+</li>
+<li>
+<p>
+deține controlul asupra proiectului
+</p>
+</li>
+<li>
+<p>
+inginer de excepție
+</p>
+</li>
+<li>
+<p>
+punte critică între ingineri și satisfacția clienților
+</p>
+</li>
+<li>
+<p>
+antrenor pentru alți ingineri
+</p>
+</li>
+<li>
+<p>
+centrat în primul rând pe concepte și mai apoi pe tehnicitate
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Conceptul de Inginer Șef reprezintă un excelent exemplu pentru conducerea tehnică a software-ului. Deseori, liderul echipei software este lipsit de autoritate sau ia decizii prea tehnice, fără o bună înțelegere a nevoilor clienților.</p></div>
+<h3 id="_echipe">Echipe</h3><div style="clear:left"></div>
+<div class="paragraph"><p>Echipa ar trebui să fie variată și capabilă să rezolve o gamă largă de probleme. Toyota crează echipe de produs cu funcționalitate hibridă, care:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+să utilizeze luarea integrativă a deciziilor
+</p>
+</li>
+<li>
+<p>
+să implimenteze rapid și precis
+</p>
+</li>
+<li>
+<p>
+să sporească procesul și fluxul prin rezolvarea de probleme tehnologice dificile
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Dezvoltatorii de software și liderii lor sunt fundamentul succesului în orice proiect. Managementul, procesul și tehnologia nu pot decât să-i susțină. Dar oricum, procesul este la fel de bun pentru ca oamenii să-l urmeze. Prin urmare, este important de a face echipele de software jucătorul cheie în procesul de îmbunătățire, dat fiind faptul că ele cunosc problemele, înțeleg lucrul și sunt capabile să găsească soluții bune.</p></div>
+</div>
+<h2 id="_utiliz_nd_calea_toyota">Utilizând Calea Toyota</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Poate echipa să inverseze o situație și să câștige? Poate ea oare să
+elaboreze un proces optim și experiență competență de dezvoltare
+rapidă a soluțiilor de calitate înaltă și costuri reduse?</p></div>
+<div class="paragraph"><p>Aceast articol ilustrează opțiunea cea mai efectivă – elaborarea
+continuă a procesului de îmbunătățire în centrul dezvoltării. Procesul
+care se axează pe calitate, elimină risipele și rezolvă problemele de
+la rădăcină(origine). Cred că această abordare reprezintă fundamentul unui succes de durată. Managerii și compania dvs. o vor îndrăgi!</p></div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2009-12-19 23:34:52 EEST
+</div>
+</div>
+</body>
+</html>
