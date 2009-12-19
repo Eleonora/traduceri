@@ -1,17 +1,18 @@
-Cum de salvat proiectele software: Calea Toyota
-===============================================
+= Cum de salvat proiectele software: Calea Toyota
 Andriy Solovey
-Nov 2009
+Nov 2009:
 Traducere, original: http://softwarecreation.org/2009/how-to-rescue-failing-software-projects-toyota-way/
 
 Managerul trânteşte uşa şi ne zice că suntem în belea. Clienţii noştri
 vechi se plâng de multe bug-uri şi performanţe proaste, clienţii noi
 se plâng pe întârzieri şi lipsă de dedicaţie. Și, colac peste pupăză,
-top managementul consideră departamentul nostru financiar nedurabil şi
-vrea să reducă serios cheltuielile. Managerul ne mai zice că suntem
-programatori geniali, că lucrăm asiduu şi creăm soluţii software cool.
+top managementul consideră departamentul nostru financiar nejustificat şi
+vrea să reducă serios cheltuielile.
+Managerul ne mai zice că suntem programatori geniali, că lucrăm asiduu şi creăm soluţii software cool.
 Dar există ceva greşit şi nu mai putem continua sa lucrăm
-aşa. Anxietatea a început sa ne penetreze sufletele. Ştim unde e
+aşa.
+
+Anxietatea a început sa ne penetreze sufletele. Ştim unde e
 greșeala: nu ne ajung oameni în echipă, ne-am asumat prea multe
 angajamente, codul se transformă într-o mizerie mare, tehnologia nouă
 şi versiunea nouă de software fac ceva rău cu serverele. Un bulgăre de
@@ -21,67 +22,68 @@ zăpadă compus din diferite probleme ne face să fim stresaţi, distraţi
 Cum ar putea proceda managerul după aceasta?
 
 * *Neîncredere*. Devine dictator, ia decizii de sine stătător, inclusiv
-angajează consultanţi din afară ca să recomande ce e de făcut, sau
+angajează consultanţi din afară ca să recomande ce e de făcut sau
 poate chiar să ne înlocuiască. Totuşi,
 ** suntem programatori buni şi ne cunoaştem treaba bine – *nu lipsa de abilităţi şi cunoştinţe* este problema.
 ** cuiva din afară i-ar lua mult timp ca să înţeleagă sistemul şi *ei vor avea o altă motivaţie* şi nu le va păsa de succesul pe termen lung.
-** oamenii vor fi *demotivați* și managerul nu poate lua decizii eficiente fără implicarea activă a echipei.
+** oamenii vor fi *descurajați* și managerul nu poate lua decizii eficiente fără implicarea activă a echipei.
 * *Încredere*. Va învesti echipa cu putere deplină de a
 rezolva problemele şi de a lua decizii proprii în speranţa că oamenii
 deştepţi, motivaţia bună şi expertiza tehnică pot face minuni. Oricum,
-** este greu de adoptat o viziunea proaspătă și gândire nestandardă atunci când echipa e scufundată într-o situație dificilă *de mai mult timp*.
+** este greu de adoptat o viziunea proaspătă și gândire nestandardă
+atunci când echipa e scufundată într-o situație dificilă *de mai mult timp*.
 ** s-ar putea ca o echipă să nu aibă înțelegere și *control asupra forțelor externe* : management, clienți, finanțe.
 ** *schimbarea realității este un proces dur* (mai ales în mințile oamenilor) și necesită mai mult decât doar experiență tehnică.
 
-Există o a treia cale. Plasați practicile de îmbunătățire în centrul procesului de dezvoltare. Faceți din auto-îmbunătățire un lucru inevitabil și necesar oricărei activități. Faceți-o in fiecare zi.
+Există o a treia cale. Plasați practicile de îmbunătățire în centrul procesului de dezvoltare. Faceți din auto-îmbunătățire un lucru inevitabil și necesar oricărei activități. Faceți-o în fiecare zi.
 
-image::images/process-improvement-toyota-way.jpg[Toyota Way]
+image::images/process-improvement-toyota-way.jpg[Calea Toyota]
 
-Dintre cele mai sigure procese ample de auto-îmbunătățire *Calea Toyota* reprezintă cel mai bun exemplu. Aceasta se concentrează pe eliminarea deșeurilor, rezolvarea problemelor de la cauza-rădăcină și luarea deciziilor corecte. Calea Toyota reduce problemele, crește eficiența internă și face compania una de succes. Acesta este cel mai bun remediu de ieshire din criză.
+Dintre cele mai sigure procese ample de auto-îmbunătățire *Calea Toyota* reprezintă cel mai bun exemplu. Aceasta se concentrează pe eliminarea risipei, rezolvarea problemelor de la origine și luarea deciziilor corecte. Calea Toyota reduce problemele, crește eficiența internă și face compania una de succes. Acesta este cel mai bun remediu de ieșire din criză.
 
 *Obiective:*
 
-* *Probleme* – situații de urgență, focare care necesită soluționare imediată: bug-uri,  căderea serverului, expirarea datei limite.
+* *Probleme* – situații de urgență, focare care necesită soluționare imediată: bug-uri, căderea serverului, expirarea datei limite.
 * *Risipe* – activități ineficiente și fără valoare adăugată: așteptarea, dezinformarea, stresul.
-* *Provocări* – adaptarea la forţele externe (piaţa, concurenţii, clienţii, societatea): noi tendinţe şi tehnologii, modificări în așteptările utilizatorilor referitor la interfață și functionalitate.
+* *Provocări* – adaptarea la forţele externe (piaţa, concurenţii, clienţii, societatea): noi tendinţe şi tehnologii, modificări în așteptările utilizatorilor referitor la interfață și funcționalitate.
 
-== Practicile de depistare a irosirilor și stoparea rezolvării problemelor
+== Practicile de depistare a risipei și stoparea rezolvării problemelor
 
-=== Depistarea irosirilor
+=== Depistarea risipei
 
-Echipa și managerii ar trebui să învețe să identifice sarcinile: problemele adevărate și deșeurile. În caz contrar, îmbunătățirile vor fi împușcături oarbe în întuneric.
+Echipa și managerii ar trebui să învețe să identifice sarcinile: problemele adevărate și risipile. În caz contrar, îmbunătățirile vor fi împușcături în întuneric.
 
-Există mai multe sarcini în dezvoltarea software-ului:
+Există mai multe obiective în dezvoltarea software-ului:
 
 * oameni stresați – energie redusă, productivitate scăzută, un număr mai mare de greșeli
-* așteptări – întârzieri, instrumente/ probleme de sistem și nefuncționare, pană de capacitate (așteptarea rezultatelor muncii altor oameni)
+* așteptări – întârzieri, instrumente/probleme de sistem și nefuncționare, pană de capacitate (așteptarea rezultatelor muncii altor oameni)
 * supra-inginerie – producând caracteristici și design complicat fără necesitate reală
 * lucru nefinisat – funcționalitate neutilizată în sistemul viu, aflată, probabil, încă în construcție sau în curs de elaborare sau pur și simplu abandonată (dar nu eliminată)
 * defecte – irosire completă de timp și bani
 * creativitate neutilizată – pierdere de timp, idei, abilități, îmbunătățiri și învățare din cauza faptului că nu implicați sau ascultați angajații dumneavoastră
-* informații neadecvate – neclare, care induc în eroare, sau pur și simplu informație eronată care cauzează activitate inutilă și conduce într-un sfârșit la refacere
+* informații neadecvate – neclare, care induc în eroare sau pur și simplu informație eronată care cauzează activitate inutilă și conduce într-un sfârșit la refacere
 * supra-procesare – luarea de măsuri inutile pentru construirea software-ului din cauza insuficienței proceselor și a design-ului sistemului, suspendării, birocrației, conformării, instrumentelor greoaie
 * mișcare – efortul necesar pentru a obține informația, sisteme de acces sau instrumente de utilizare
 * multi-tasking – pierdere de timp pentru a comuta între proiecte, sarcini sau diferite activități
 
-
 === Jidoka – încetați de a rezolva problema pentru a obține calitate din prima
 
-Nu este îndeajuns să cunoașteți sarcinile dvs.  Echipa ar trebui să execute ordinul de a trage în țintă imediat.  În caz contrar, cele mai bune intenții vor fi îngropate sub avalanșa crescândă a problemelor.
+Nu este îndeajuns să cunoașteți sarcinile dvs. Echipa ar trebui să execute ordinul de a trage în țintă imediat. În caz contrar, cele mai bune intenții vor fi îngropate sub avalanșa crescândă a problemelor.
 
 Cum să încetezi:
 
 * calitatea pentru clienți conduce toate procesele – previne patch-urile temporare și deciziile proaste vis-a-vis de calitate
 * toleranța scăzută față de problemele calității și imediata lor detectare reprezintă principiul de bază al muncii
-* utilizarea Andon – un  sistem care semnalizează pentru ajutor,  înștiințează despre o problemă și stopează procesul
+* utilizarea Andon – un  sistem care semnalizează pentru ajutor,
+* înștiințează despre o problemă și stopează procesul de producție
 * axarea pe capacitățile instrumentelor și a procesului de detectare a problemelor și de stopare a acestuia
 * utilizarea tututor metodelor moderne de QA disponibile
 * managerii încurajează oprirea procesului de soluționare a problemelor și sprijină implimentarea măsurilor de contra-atac
 
-
 == Luarea deciziilor
 
-Calea Toyota- _”Luați deciziile încet, prin consens și, temeinic luând în considerație toate opțiunile, implementați rapid.”_
+Calea Toyota- _”Luați deciziile încet, prin consens și temeinic, luând în considerație toate opțiunile, implementați rapid.”_
+
 Chiar cunoscând problemele și fiind dedicată soluționării lor, Echipa ar trebui să ia decizii corecte întru soluționare.
 
 *Ia deciziile lent*
@@ -98,8 +100,7 @@ Chiar cunoscând problemele și fiind dedicată soluționării lor, Echipa ar tr
 * Evaluează rezultatele
 * Standardizează în cazul când soluțiile sunt efective
 
-Practică, ca să eliminezi irosirile și soluționează problemele
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== Practici pentru eliminarea risipei și soluționarea problemelor
 
 === *Genchi Genbutsu* – du-te și vezi  tu însuți pentru a înțelege complet situația
 
@@ -109,16 +110,17 @@ aceasta realitate servind drept bază pentru deciziile tale. Deci, tu
 și echipa ta ar trebui să obțineți informații juste pentru a lua
 decizii corecte:
 
-* du observații cu mintea goală
+* du observații cu mintea limpede
 * evită ipoteze și idei preconcepute
 * utilizează informația verificată personal
 
-Într-un cuvânt,  întemeiază deciziile pe ceea ce se întâmplă cu adevărat.
+Într-un cuvânt, întemeiază deciziile pe ceea ce se întâmplă cu adevărat.
 
 === *Kaizen (5 de ce-uri)* – învățare și îmbunătățire continuă
 
-_”Noi privim erorile ca oportunități de învățare” – Calea Toyota
-Echipa ar trebui să găsească cauzele-rădăcină ale problemelor. Kaizen ajută la găsirea acestora prin întrebarea repetată “de ce apare problema? “
+_”Noi privim erorile ca oportunități de învățare”_ – Calea Toyota
+
+Echipa ar trebui să găsească originea problemelor. Kaizen ajută la găsirea acestora prin întrebarea repetată “de ce apare problema?“
 
 Exemplu de Kaizen
 Problemă: există erori JavaScript persistente pe un site din producție
@@ -131,13 +133,17 @@ Problemă: există erori JavaScript persistente pe un site din producție
 * De ce? Puteți continua...
 
 
-Kaizen ne obligă să depășim dorința de a găsi o primă explicație convenabilă și de a aplana problemele fără rezolvarea cauzelor-rădăcină. Prin aplicarea neînduratoare a acestei practici, ajungem să înțelegem mai profund realitatea și să învățăm mai bine despre produsele, procesele, oamenii, mediul și instrumentele noastre. Kaizen este o practică de bază pentru depistarea deșeurilor, soluționarea problemelor și îmbunătățirea procesului. Pentru a evita uitarea învățării de la Kaizen, este important de a standardiza procesul de îmbunătățire și de a-l situa la baza ulterioarelor îmbunătățiri.
+Kaizen ne obligă să depășim dorința de a găsi o primă explicație
+convenabilă și de a aplana problemele fără rezolvarea cauzelor care
+stau la baza lor. Prin aplicarea neînduratoare a acestei practici, ajungem să înțelegem mai profund realitatea și să învățăm mai bine despre produsele, procesele, oamenii, mediul și instrumentele noastre. Kaizen este o practică de bază pentru depistarea risipei, soluționarea problemelor și îmbunătățirea procesului. Pentru a evita uitarea învățării din Kaizen, este important de a standardiza procesul de îmbunătățire și de a-l situa la baza ulterioarelor îmbunătățiri.
 
 == Practici de susținerea proceselor
 
 === *Standarde* – astăzi știți cel mai bine ce trebuie să îmbunătățiți mâine
 
-Lucrul standardizat este mai ușor,  mai ieftin și mai rapid  - metodele stabile repetabile pot menține  predictabilitatea,  productibilitatea înaltă și calitatea susținerii.
+Lucrul standardizat este mai ușor, mai ieftin și mai rapid - metodele
+stabile repetabile pot menține predictabilitatea, productibilitatea
+înaltă și suportă calitatea.
 
 Standardele efective nu provin din teorie, ci din:
 
@@ -146,8 +152,7 @@ Standardele efective nu provin din teorie, ci din:
 * lecții din aplicarea standardelor existente
 
 Echipa ar trebui să utilizeze standarde în diverse domenii: faze de proiect și activități, practici de dezvoltare, abordări de arhitectură și design, codul de convenții, tehnici de programare, biblioteci și coduri ale terțelor părți, reutilizarea componentelor și a soluțiilor, testare și așa mai departe.
-Standardizarea în dezvoltarea sofware-ului este un subiect controversat: unii teoreticieni doresc să aducă progranarea mai aproape de ingineria supusă standardelor, practicienii însă sunt dornici de a reduce standardizarea la minimum, promavând creativitatea și auto-organizarea. În interpretarea rigidă, standardele sunt reguli care ”trebuie urmate”  în orice situație; în altă interpretare standardele sunt pași bine definiți și linii directoare recomandate în context specific. Eu sunt adeptul ultimei definiții. O echipă productivă ar trebui să dispună de standarde pentru a se axa pe nevoile clienților în locul luptei continue cu aceleași puzzle-uri și probleme. Sistemul de standarde nu ar trebui să fie a un cod greoi de conduită birocratică, dar o carte fluidă și luminoasă de cunoștințe, o carte care conține cele mai utile și importante norme și liste de verificare.  Standardele vor fi eficiente dacă acestea sunt minime, revăzute de multe ori (Kaizen) și urmate de fiecare membru al echipei.
-
+Standardizarea în dezvoltarea sofware-ului este un subiect controversat: unii teoreticieni doresc să aducă programarea mai aproape de ingineria supusă standardelor, practicienii însă sunt dornici de a reduce standardizarea la minimum, promavând creativitatea și auto-organizarea. În interpretarea rigidă, standardele sunt reguli care ”trebuie urmate”  în orice situație; în altă interpretare standardele sunt pași bine definiți și linii directoare recomandate în context specific. Eu sunt adeptul ultimei definiții. O echipă productivă ar trebui să dispună de standarde pentru a se axa pe nevoile clienților în locul luptei continue cu aceleași puzzle-uri și probleme. Sistemul de standarde nu ar trebui să fie a un cod greoi de conduită birocratică, dar o carte fluidă și luminoasă de cunoștințe, o carte care conține cele mai utile și importante norme și liste de verificare. Standardele vor fi eficiente dacă acestea sunt minime, revăzute de multe ori (Kaizen) și urmate de fiecare membru al echipei.
 
 === Tehnologii sigure foarte bine testate
 
@@ -156,9 +161,9 @@ Echipa ar trebui să fie conservatoare față de tehnologiile noi. Dezvoltarea s
 Considerații pentru utilizarea tehnologiei
 
 * scopul principal este de a îmbunătăți fluxul și de a susține oamenii, procesele și valorile
-* procesul este condus de afaceri, nu se referă la tehnologii; software-ul și instrumentele nu elimină deșeurile desinestătător
+* procesul este condus de afaceri, nu se referă la tehnologii; software-ul și instrumentele nu elimină risipile desinestătător
 * tehnologia este vizuală și intuitivă – oamenii o pot folosi corect și eficient
-* procesează manual înainte de a adapta tehnolgia în sprijinul procesului – întelege ce probleme soluționează ea și cum te poate ea ajuta (tehnologia)
+* procesează manual înainte de a adapta tehnolgia în sprijinul procesului – întelege ce probleme soluționează ea și cum te poate tehnologia ajuta
 * important: la Kaizen oamenii/procesele sunt simple, mașinile sunt complicate
 
 Adaptarea la noile tehnologii:
@@ -169,11 +174,16 @@ Adaptarea la noile tehnologii:
 * respinge tehnologia în cazul în care ea intră în conflict cu cultura
 sau ar putea perturba stabilitatea, fiabilitatea și previzibilitatea
 
-În același timp, în căutare de noi abordări, *oamenii trebuie încurajați să ia în considerație tehnologiile noi*. Dacă tehnologia ameliorează procesele și fluxul, după testarea ei minuțioasă ea trebuie imediat implementată.
+În același timp, în căutare de noi abordări, *oamenii trebuie încurajați să ia în considerație tehnologiile noi*. Dacă tehnologia ameliorează procesele și fluxul, după testarea ei minuțioasă, ea trebuie imediat implementată.
 
 === Controalele vizuale
 
-Echipa ar trebui să aibă un statut clar al informației. Controalele vizuale pot transmite creierului nostru informație complexă într-o manieră foarte rapidă și eficientă. Putem folosi controalele ca pe o istorie narativă pentru utilizator; statutul proiectelor, serverelor sau construrii codului; arde diagramele şi alte lucruri.
+Echipa ar trebui să aibă un statut clar al informației. Controalele
+vizuale pot transmite creierului nostru informație complexă într-o
+manieră foarte rapidă și eficientă. Putem folosi controalele ca pe o
+istorie narativă pentru utilizator; statutul proiectelor, serverelor
+sau construrii codului; diagramele burndown şi alte lucruri.
+
 Simpli indicatori vizuali ajută oamenii să depisteze imediat dacă au deviat de la standarde, să arate esența situației și direcția de soluționare a problemei.
 
 * utilizează cei mai importanți și simpli indicatori
@@ -182,10 +192,12 @@ Simpli indicatori vizuali ajută oamenii să depisteze imediat dacă au deviat d
 
 == Oamenii, conducătorii și echipa
 
-=== Oameni
+=== Oamenii
 
-Oamenii care elaborează software-ul sunt oamenii care ar trebui să îmbunătățească procesul. Ei sunt direct implicați și au o experiență de prima mână a problemelor și deșeurilor.
-Calea Toyota pretinde că fiecare membru al echipei poate soluționa problema și că experința de lucru valorează mai mult decât cunoștințele teoretice. Echipa va depăși oricare consultanți exteriori și va găsi o mai bună modalitate de lucru dacă membrii ei sunt deschiși pe probleme și dornici de a găsi soluții bune.
+Oamenii care elaborează software-ul sunt oamenii care ar trebui să
+îmbunătățească procesul. Ei sunt direct implicați și au o experiență
+de prima mână a problemelor și a risipei.
+Calea Toyota pretinde că fiecare membru al echipei poate soluționa problema și că experiența de lucru valorează mai mult decât cunoștințele teoretice. Echipa va depăși oricare consultanți exteriori și va găsi o mai bună modalitate de lucru, dacă membrii ei sunt deschiși pe probleme și dornici de a găsi soluții bune.
 
 === Conducători
 
@@ -196,7 +208,7 @@ Echipa are mare nevoie de lideri puternici pentru a crea produse tari, pentru a 
 * binecuvântat de managementul de sus
 * deține controlul asupra proiectului
 * inginer de excepție
-* punte crtitică între ingineri și satisfacția clienților
+* punte critică între ingineri și satisfacția clienților
 * antrenor pentru alți ingineri
 * centrat în primul rând pe concepte și mai apoi pe tehnicitate
 
@@ -210,8 +222,7 @@ Echipa ar trebui să fie variată și capabilă să rezolve o gamă largă de pr
 * să implimenteze rapid și precis
 * să sporească procesul și fluxul prin rezolvarea de probleme tehnologice dificile
 
-Dezvoltatorii de software și liderii lor sunt funfamentul succesului în orice proiect. Managementul, procesul și tehnologia nu pot decât să-i susțină. Dar oricum, procesul este la fel de bun pentru ca oamenii să îl urmeze.  Prin urmare, este important de a face echipele de software  un jucător cheie în procesul de îmnunătățiri, dat fiind faptul că ele cunosc problemele, înțeleg lucrul și sunt capabile să găsească soluții bune.
-
+Dezvoltatorii de software și liderii lor sunt fundamentul succesului în orice proiect. Managementul, procesul și tehnologia nu pot decât să-i susțină. Dar oricum, procesul este la fel de bun pentru ca oamenii să-l urmeze. Prin urmare, este important de a face echipele de software jucătorul cheie în procesul de îmbunătățire, dat fiind faptul că ele cunosc problemele, înțeleg lucrul și sunt capabile să găsească soluții bune.
 
 == Utilizând Calea Toyota
 
@@ -221,5 +232,5 @@ rapidă a soluțiilor de calitate înaltă și costuri reduse?
 
 Aceast articol ilustrează opțiunea cea mai efectivă – elaborarea
 continuă a procesului de îmbunătățire în centrul dezvoltării. Procesul
-care se axează pe calitate, elimină risipele și rezolvă probelemele de
+care se axează pe calitate, elimină risipele și rezolvă problemele de
 la rădăcină(origine). Cred că această abordare reprezintă fundamentul unui succes de durată. Managerii și compania dvs. o vor îndrăgi!
