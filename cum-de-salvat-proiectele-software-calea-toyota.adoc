@@ -37,7 +37,7 @@ atunci când echipa e scufundată într-o situație dificilă *de mai mult timp*
 
 Există o a treia cale. Plasați practicile de îmbunătățire în centrul procesului de dezvoltare. Faceți din auto-îmbunătățire un lucru inevitabil și necesar oricărei activități. Faceți-o în fiecare zi.
 
-image::images/process-improvement-toyota-way.jpg[Calea Toyota]
+image::images/imbunatatirea-proceselor-calea-toyota.jpg[Îmbunătățirea proceselor - Calea Toyota]
 
 Dintre cele mai sigure procese ample de auto-îmbunătățire *Calea Toyota* reprezintă cel mai bun exemplu. Aceasta se concentrează pe eliminarea risipei, rezolvarea problemelor de la origine și luarea deciziilor corecte. Calea Toyota reduce problemele, crește eficiența internă și face compania una de succes. Acesta este cel mai bun remediu de ieșire din criză.
 
