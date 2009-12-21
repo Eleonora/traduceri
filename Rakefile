@@ -1,8 +1,19 @@
-task :default => "doc:gen"
+task :default => :docs
 
-namespace :doc do
-  desc "Generates documentation"
-  task :gen do
-    sh "asciidoc -a max-width=55em -a toc *.adoc"
+FILES = Dir["*.adoc"]
+PAGES = FILES.map {|f| "#{f.gsub(/adoc$/, '')}html"}
+
+PAGES.each do |html|
+  txt = File.basename(html).gsub(/html$/, 'adoc')
+
+  file html => [txt] do |t|
+    sh "asciidoc -a max-width=55em -a toc -a toc-title=Cuprins -o #{t.name} #{txt}"
   end
+end
+
+task :docs => [:init, :compile]
+task :compile => PAGES
+
+task :init do
+  # mkdir_p "out"
 end
