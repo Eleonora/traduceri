@@ -59,6 +59,12 @@ image::images/workrave_stop.jpg[Workrave Ajunge pe azi]
 
 Vedeți pe site-ul oficial mai multe link:http://www.workrave.org/screenshots/unix/[screen-uri cu workrave].
 
+== Statistică
+
+Workrave mai strînge și statistică de utilizare a tastaturii și mouse-ului, mai jos e un screenshot cum arată o zi de lucru la mine:
+
+image::images/workrave_statistica_ziua_de_munca.png[Workrave Statistica pe ziua de muncă]
+
 == Integrarea cu GTD
 
 Eu deobicei când vreau să fiu cât mai productiv deconectez orice ce
