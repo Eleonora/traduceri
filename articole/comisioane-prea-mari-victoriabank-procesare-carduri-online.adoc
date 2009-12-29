@@ -1,0 +1,52 @@
+= Comisioane prea mari p-u procesarea cardurilor online de la VictoriaBank
+
+*Scrisoare deschisă guvernului republicii Moldova*
+
+Bună ziua,
+
+În conformitate cu strategia guvernului pentru anul 2010:
+http://www.jurnal.md/ro/news/dezvoltarea-sectorul-tic-va-contribui-la-cresterea-pib-ului-cu-1-2-108315/
+
+Eu cred că ar fi bine de discutat cu VictoriaBank reviziurea comisioanelor pentru procesarea cardurilor în magazinele online(Internet).
+Banca nu are concurenți în acest domeniu și implică monopolul ei pe piață.
+Dacă nu se poate de discutat cu banca, atunci guvernul poate s-o inspecteze la problemele de monopol sau să ajute altă bancă din MD să ofere asemenea servicii pentru binele consumatorilor. Cu alte cuvinte să fie concurență în domeniu.
+
+== Exemplu de comisioane la VictoriaBank
+----
+350$ pentru setarea contului.
+5% comision + 0.40$ de transacție.
+1500$ pe an pentru fiece magazin online.
+----
+
+== Exemplu de comisioane la Google Checkout
+Nu-s comisioane la setarea contului.
+
+Vînzări lunare, Comisioane pe transacție
+----
+mai mic de $3,000           2.9% + $0.30
+$3,000 - $9,999.99          2.5% + $0.30
+$10,000 - $99,999.99        2.2% + $0.30
+$100,000 și mai mult        1.9% + $0.30
+----
+
+Eu nu cred că firmele din Moldova sunt mai bogate ca cele din SUA și pot plăti mai mult pentru asemenea servicii.
+La noi în Moldova ca la nimeni, suntem o țară săracă, dar avem prețurile la mărfuri și servicii mai scumpe ca în UE sau SUA.
+
+Multe firme de la noi deschid firme offshore p-u a avea acces la comisioane mai mici la procesarea cardurilor online, în acest mod se prejudiciază bugetul statului. Sute de mii de dolari trec pe lîngă impozitele statului și toate acestea din cauza unei bănci.
+
+== Idei opționale
+* Ar fi bine de redus nițel TVA pentru comerțul online, pentru că este
+neînsemnat acum și guvenul își poate permite nepierzînd acumulări la
+buget sau de redus TVA numai pentru firmele mici pentru a încuraja producătorii mici și mijlocii.
+* De micșorat birocrația și prețul pentru terminalele POS p-u firme de la bănci - Achitarea cu carduri a mărfurilor în magazine și alte centre comerciale, acum doar firmele bogate pot să-și permită așa lux.
+
+== De ce trebuie stimulat comerțul online?
+
+* Se achită cu cardurile și toate mijloacele financiare trec prin bănci, transparență pentru fisc.
+* Se exclude în mare parte achitarea mărfurilor și serviciilor nefolosind aparatele de casă.
+* Firmele mari pot spăla bani cu operațiunile de casă, fiscul nu poate controla toate operașiunile din centrele comerciale mari care au rulaje foarte mari pe zi, dacă aceste centre își fac magazine online cu achitare prin carduri, atunci totul va fi transparent. Reducerea TVA-ul pentru comerțul online poate încuraja firmele să susțină guvernul în proiectul TIC.
+* E mai ușor pentru consumatori.
+
+Dacă scrisoarea nu ține de competența guvernului, vă rog să-mi spuneți unde trebuie să mă adresez.
+
+PS: aceasta este o scrisoare deschisă și va fi publicată pe un site.
