@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+  <title>Bine aţi venit -  Mirror pentru Debian in Moldova</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>Bine aţi venit -  Mirror pentru Debian in Moldova</h1>
+
+<p>Pentru a va configura sistemul de operare sa foloseasca acest mirror e nevoie de a edita fişierul /etc/apt/source.list
+<ul>
+<li>Pentru release-ul Debian 5.0(Lenny)
+<pre>deb http://www.debian.md/debian/ lenny main non-free contrib
+deb-src http://www.debian.md/debian/ lenny main non-free contrib
+
+# security
+deb http://www.debian.md/debian-security/ lenny/updates main contrib
+deb-src http://www.debian.md/debian-security/ lenny/updates main contrib
+</pre>
+<li>Pentru release-ul Debian Testing (Squeeze)
+<pre>deb http://www.debian.md/debian/ testing main non-free contrib
+deb-src http://www.debian.md/debian/ testing main non-free contrib
+
+# security
+deb http://www.debian.md/debian-security/ testing/updates main non-free contrib
+deb-src http://www.debian.md/debian-security/ testing/updates main non-free contrib
+</pre>
+</ul>
+
+Apoi:
+<pre># apt-get update</pre>
+
+<hr />
+<p>Daca acest mirror va economisit timp si resurse, va rugam sa faceţi o donaţie proiectului. Acest lucru se poate face
+prin intermetiul terminalelor Moldpay, Nettopro, OSMP. <p>De exemplu pentru a dona cu ajutorul terminalului Moldpay:
+<ul>
+<li>Alegem categoria Plaţi electronice</li>
+<li>Selectăm logotipul Kirsan</li>
+<li>Introducem numărul 2</li>
+<li>Introducem în automat bancnote</li>
+</ul>
+
+Vă mulţumim anticipat pentru susţinere.
+<hr />
+
+<h2>Alte resurse</h2>
+
+<p><a href="/traduceri/">Articole traduse în română</a></p>
+<p><a href="http://blog.debian.md">Blog despre debian</a></p>
+<p><a href="http://blog.rubyonrails.md">Blog despre rubyonrails și ruby</a></p>
+
+</body>
+</html>
