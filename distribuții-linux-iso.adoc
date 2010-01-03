@@ -1,0 +1,29 @@
+= ISO-uri CD/DVD cu distribuții Linux
+
+Mai jos sunt linkurile la torrente cu cele mai populare distribuții Linux.
+
+== Knoppix 6.2
+
+* link:http://files.kirsan.md/linux-torrents/knoppix_cd_6.2.torrent[CD Torrent] (en)
+* DVD - _în curând_
+
+== Debian
+
+=== 5.0 (Lenny)
+
+* CD - _în curând_
+* DVD - _în curând_
+
+== Ubuntu
+_în curând_
+
+== Fedora
+_în curând_
+
+== Gentoo
+_în curând_
+
+== Credits
+
+Pagină compilată de Comunitatea Linux din Moldova.
+Vizitați link:http://forum.linux.md[forumul nostru].
