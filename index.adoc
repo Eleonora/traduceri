@@ -2,8 +2,8 @@
 
 == Configurare
 
-Pentru a vă configura sistemul de operare să foloseasca acest mirror e
-nevoie de a edita fişierul `/etc/apt/source.list`, înclocuiți
+Pentru a vă configura sistemul de operare să folosească acest mirror e
+nevoie de a edita fişierul `/etc/apt/source.list`, înlocuiți
 conținutul lui cu liniile de mai jos în dependență de release-ul folosit.
 
 * Pentru release-ul stabil Debian 5.0(Lenny)
