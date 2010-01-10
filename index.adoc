@@ -41,10 +41,11 @@ Dacă acest mirror va economisit timp și resurse, va rugăm să faceţi o dona�
 prin intermetiul terminalelor Nettopro, OSMP.
 
 De exemplu pentru a dona cu ajutorul terminalului OSMP:
-* Alegem categoria Plaţi electronice
-* Selectăm logotipul Kirsan
-* Întroducem numărul 2
-* Întroducem în automat bancnote
+
+* Alegem categoria Plaţi electronice.
+* Selectăm logotipul Kirsan.
+* Întroducem numărul 2.
+* Întroducem în automat bancnote.
 
 Vă mulţumim anticipat pentru susţinere.
 
