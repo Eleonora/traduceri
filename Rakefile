@@ -7,6 +7,7 @@ PAGES.each do |html|
   txt = File.basename(html).gsub(/html$/, 'adoc')
 
   file html => [txt] do |t|
+    # -a lang=ro 
     sh "asciidoc -a max-width=55em -a toc -a toc-title=Cuprins -o #{t.name} #{txt}"
   end
 end

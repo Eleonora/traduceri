@@ -1,0 +1,57 @@
+= Bine aţi venit - Mirror pentru Debian in Moldova
+
+== Configurare
+
+Pentru a vă configura sistemul de operare să foloseasca acest mirror e
+nevoie de a edita fişierul `/etc/apt/source.list`, înclocuiți
+conținutul lui cu liniile de mai jos în dependență de release-ul folosit.
+
+* Pentru release-ul stabil Debian 5.0(Lenny)
+----
+deb http://www.debian.md/debian/ lenny main non-free contrib
+deb-src http://www.debian.md/debian/ lenny main non-free contrib
+
+# security
+deb http://www.debian.md/debian-security/ lenny/updates main contrib
+deb-src http://www.debian.md/debian-security/ lenny/updates main contrib
+----
+
+* Pentru release-ul Debian Testing (Squeeze)
+----
+deb http://www.debian.md/debian/ testing main non-free contrib
+deb-src http://www.debian.md/debian/ testing main non-free contrib
+
+# security
+deb http://www.debian.md/debian-security/ testing/updates main non-free contrib
+deb-src http://www.debian.md/debian-security/ testing/updates main non-free contrib
+----
+
+* alte release-uri la fel se configurează: experimental, sid, etch
+
+Apoi facem update la informația despre pachete de pe serverul de la distanță:
+----
+apt-get update
+----
+
+După aceasta orice instalare de noi pachete sau reînnoirea sistemului
+de operare va folosi oglinda locală din Moldova.
+
+== Ajutați
+Dacă acest mirror va economisit timp și resurse, va rugăm să faceţi o donaţie proiectului. Acest lucru se poate face
+prin intermetiul terminalelor Nettopro, OSMP.
+
+De exemplu pentru a dona cu ajutorul terminalului OSMP:
+* Alegem categoria Plaţi electronice
+* Selectăm logotipul Kirsan
+* Întroducem numărul 2
+* Întroducem în automat bancnote
+
+Vă mulţumim anticipat pentru susţinere.
+
+== Alte resurse
+
+* link:distribuții-linux-iso.html[ISO-uri cu distribuții Linux]
+* link:traduceri/[Articole traduse în română]
+* link:http://forum.linux.md[Forumuri desre linux].
+* link:http://blog.debian.md[Blog despre debian]
+* link:http://blog.rubyonrails.md[Blog despre rubyonrails și ruby]

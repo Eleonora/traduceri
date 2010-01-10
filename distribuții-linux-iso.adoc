@@ -4,23 +4,26 @@ Mai jos sunt linkurile la torrente cu cele mai populare distribuții Linux.
 
 == Knoppix 6.2
 
-* link:http://files.kirsan.md/linux-torrents/knoppix_cd_6.2.torrent[CD Torrent] (en)
-* DVD - _în curând_
+* link:http://files.kirsan.md/linux-torrents/knoppix_62_i386_cd.torrent[CD Torrent] (i386, en)
+* link:http://files.kirsan.md/linux-torrents/knoppix_62_i386_dvd.torrent[DVD Torrent] (i386, en)
 
 == Debian
 
-=== 5.0 (Lenny)
+=== 5.0.3 (Lenny)
 
-* CD - _în curând_
-* DVD - _în curând_
+* DVD1 i386 - link:http://files.kirsan.md/linux-torrents/debian_503_i386_md.torrent[torrent]
+* DVD1 amd64 - link:http://files.kirsan.md/linux-torrents/debian_503_amd64_md.torrent[torrent]
 
 == Ubuntu
+
 _în curând_
 
 == Fedora
+
 _în curând_
 
 == Gentoo
+
 _în curând_
 
 == Credits
