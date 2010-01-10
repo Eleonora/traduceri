@@ -20,7 +20,7 @@ _în curând_
 
 == Fedora
 
-_în curând_
+Vizitați link:http://torrent.fedoramd.org/[pagina cu torrente] de la fedora.md
 
 == Gentoo
 
