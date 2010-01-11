@@ -14,17 +14,15 @@ Mai jos sunt linkurile la torrente cu cele mai populare distribuții Linux.
 * DVD1 i386 - link:http://files.kirsan.md/linux-torrents/debian_503_i386_md.torrent[torrent]
 * DVD1 amd64 - link:http://files.kirsan.md/linux-torrents/debian_503_amd64_md.torrent[torrent]
 
-== Ubuntu
+== Ubuntu 9.0.2
 
-_în curând_
+* CD i386 -
+  link:http://files.kirsan.md/linux-torrents/ubuntu_902_i386_cd.torrent[torrent]
+* CD amd64 - link:http://files.kirsan.md/linux-torrents/ubuntu_902_amd64_cd.torrent[torrent]
 
 == Fedora
 
 Vizitați link:http://torrent.fedoramd.org/[pagina cu torrente] de la fedora.md
-
-== Gentoo
-
-_în curând_
 
 == Credits
 
