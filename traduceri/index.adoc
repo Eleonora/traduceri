@@ -1,0 +1,9 @@
+= Articole și traduceri despre Software, Git, Debian, Ruby, Rails
+
+* link:înlocuieşte-te–un-ghid-pentru-delegarea-volumului-tău-de-muncă.html[Înlocuieşte-te – Un ghid pentru delegarea volumului tău de muncă].
+* link:cum-de-salvat-proiectele-software-calea-toyota.html[Cum de salvat proiectele software: Calea Toyota].
+* link:workrave-si-lucrul-acasa.html[Workrave - ajutorul Nr.1 p-u cei ce lucrează la computer].
+* link:svn-ro.html[Curs fulger Git - SVN].
+* link:everyday-ro.html[20 de comenzi GIT pentru lucrul de zi cu zi].
+
+Dacă doriți să contribuiți cu documentație la acest proiect, scrieți lz@kirsan.md
