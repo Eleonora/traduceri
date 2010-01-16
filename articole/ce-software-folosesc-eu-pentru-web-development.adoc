@@ -1,0 +1,19 @@
+= Ce software folosesc eu pentru web development
+
+OS: Debian
+GUI: Kde4
+Shell: zsh
+Editor: emacs23
+SCM: git
+Programming Language: Ruby
+Web framework: Rails
+Mail client: Kmail
+Twitter client: Qwit
+IM/Jabber: Pidgin
+IM/Voice: Skype
+Image editor: Gimp
+Office suite: Open Office 3.0: writer, calc, draw
+RSS Reader: Akregator
+TODO tracking: tracks-ng
+Project hosting: Assembla
+Browsers: Chrome, Iceweasel, Konqueror, Opera
