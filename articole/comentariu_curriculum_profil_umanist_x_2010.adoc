@@ -1,0 +1,19 @@
+= Comentarii la curriculum informatica p-u profil umanist, clasele X-XII
+
+Am citit recent curriculum și nu m-a impresionat deloc, îmi vine în
+minte că acesta nu a fost scris de persoane cu profil umanist. Eu tot
+nu sunt de profil umanist, dar privesc lucrurile din partea practică.
+
+Pentru umaniști trebuie mai multe lecții practici decât teorie.
+
+* Instalarea OS Ubuntu
+* Configurarea rețelei
+* Lucrul cu printerul, rezolvarea problemelor.
+* Lucrul cu programele openoffice
+* Crearea paginilor web
+* Structure calculatorului și rețelei
+* Informația și unități de măsură.
+* Prelucrarea imaginilor cu Gimp
+* Tehnologii noi
+
+De ce elevilor cu profil umanist le trebuie baze de date? structuri de date? subprograme?
