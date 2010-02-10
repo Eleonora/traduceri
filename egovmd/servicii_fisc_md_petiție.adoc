@@ -1,0 +1,22 @@
+= Plângere - servicii online
+
+Nu pot folosi serviciul dvs online fiindcă nu am OS windows!
+
+Obligați toți contribuabilii să procure licență Windows? Faceți un serviciu web calitativ. SUA a dat un grant foarte mare p-u fisc, se putea de făcut mult mai bun cu acei bani.
+
+Dacă aveți nevoie de ajutor, puteți să mă contactați.
+
+PS: Faceți textarea-ul la forma de contact mai mare, ați folosit vreo dată această formă? Stai și puchești cu 3 rânduri de text și 30 coloane. Și de ce trebuie să întroduc captcha dacă sunt logat în sistem?
+
+Mai jos prezint unele screen-uri:
+
+* Fără lămuriri de ce să aștept 48 de ore
+image:images/fisc_stupid.png[Fără lămuriri de ce să aștept 48 de ore]
+
+* Formă de contact deloc prietenoasă
+image:images/servicii_fisc_forma_de_contact.png[Formă de contact foarte proastă]
+
+* Eroare applicație la fisc:
+image:images/servicii_fisc_probleme.png[Eroare în sistem]
+
+Toată corespondența va fi publicată pe Internet, fiindcă este de interes public.
