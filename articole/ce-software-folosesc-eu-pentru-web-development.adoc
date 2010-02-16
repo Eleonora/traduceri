@@ -17,3 +17,12 @@ RSS Reader: Akregator
 TODO tracking: tracks-ng
 Project hosting: Assembla
 Browsers: Chrome, Iceweasel, Konqueror, Opera
+
+== Alte pachete Debian
+
+* git-buildpackage
+* reprepro
+* gnupg-agent
+* rar unrar
+* kchmviewer
+
