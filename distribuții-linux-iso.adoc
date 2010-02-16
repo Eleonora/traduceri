@@ -1,6 +1,8 @@
 = ISO-uri CD/DVD cu distribuții Linux
 
 Mai jos sunt linkurile la torrente cu cele mai populare distribuții Linux.
+Dacă aveți dificultăți cu descărcarea imaginilor ISO, informați-ne pe
+link:http://forum.linux.md[forum] sau la contul twitter @linux_md
 
 == Knoppix 6.2
 
