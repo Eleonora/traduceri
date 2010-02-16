@@ -25,4 +25,4 @@ Browsers: Chrome, Iceweasel, Konqueror, Opera
 * gnupg-agent
 * rar unrar
 * kchmviewer
-
+* ttf-mscorefonts-installer
