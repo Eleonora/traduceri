@@ -26,3 +26,4 @@ Browsers: Chrome, Iceweasel, Konqueror, Opera
 * rar unrar
 * kchmviewer
 * ttf-mscorefonts-installer
+* komprare
