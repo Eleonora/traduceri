@@ -1,0 +1,25 @@
+= Comisioane p-u carduri externe la bănci
+
+Dacă aveți un card de peste hotare în dolari SUA și doriți să
+extrangeți valută la o bancă din MD, va trebui să plătiți un comision
+de la 1.5% - 2%. Mai jos prezint lista de bănci și comisioanele.
+
+.comisioane la bănci
+[width="80%",cols="10,^2,^2,4",options="header"]
+|=========================================================
+|Banca |Comision,% |Telefon |Comentarii
+
+|Banca Comerciala Română |1.5 |220549 |
+
+|Banca de Economii |1.5 |241078 |
+
+|Energbank |1.5 |271599 |
+maxim 3000$
+
+|Unibank |1.8 |253943 |
+
+|Moldova Agroindbank |1.9 |856555  |
+
+|Viktoriabank |2.0 | 210202 |
+
+|=========================================================
