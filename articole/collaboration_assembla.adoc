@@ -1,0 +1,60 @@
+= Our collaboration and my local business
+
+Dear Andy,
+
+Once you said me that I will start my own business, you will help
+me. I think this year is the time when I will need your support.
+
+I decided to start my own business here in Moldova.
+
+== Why?
+
+I'm now 30y.o. and I took a lot from my country for free: learning,
+services and I did not paid taxes for 2-3 years. My mind is telling me
+that I need to return the investment. So another 30 years from my life
+I want to dedicate to Moldova state, mostly to our social institutions.
+I want to teach people from my area what I learned along my experience
+while I was working for US companies.
+
+Also Assembla is growing and processes are becoming slower for my ambitions, I
+have a lot of ideas, but their implementation is so slow, so I must
+forget about them to avoid stress.
+
+During last 2 weeks I have a fight in my mind with ideas from both
+companies. I was not able to complete my goals at Assembla and I could
+not allocate enough time for my own business. I can not sleep at night
+because my head is full of ideas that I can not complete. If this will
+continue I can get some problems with my health. My daughters are
+growing and they need more attention, but I'm giving to my family
+less.
+
+All this things breaks the harmony that helps me to create, so I
+decided to stop thinking and do some actions.
+
+== How?
+
+I will create a LLC and I will start to grow the business. I will
+support web technology here and I will promote cloud services in our country.
+I have 2.66% shares of Assembla and I want to use some of them as an
+investment. Also I will continue to work with you till the end of this year(2010).
+I will write docs, make plans, train people, but I will code less. I
+also want to avoid my participation in servers monitoring because it is causing
+stress. I can make plans to improve every service failure, but I can
+not implement myself. I can train and coach people to implement my
+plans. Life just happens and we can not prevent all things.
+
+You should think about how we will continue to work this year. After
+please send me your suggestions. I will need a week vacation after one
+month from now: 22 - 28 March. After I will setup anything here, I
+can collaborate with Assembla on bounty projects starting next year. Also I can help with
+manual testing, I will continue to use www.assembla.com for my
+needs. I will always be glad to help you with any
+suggestions, because I want to thank you that you believed in me long
+time ago and allowed myself to learn and improve my skills.
+
+
+I hope you can understand me ...
+
+Best regards,
+
+Assembla Technical leader.
