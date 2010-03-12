@@ -1,6 +1,5 @@
 = Informații cum de creat un SRL în Moldova
 
-
 == Lansarea afacerii proprii în 10 paşi
 
 Mulţi sunt astăzi nemulţămiţi de veniturile pe care le au, fapt care îi determină să se gândească la lansarea unei afaceri. Să vedem cum are loc procesul înfiinţării unei firme de tip SRL în Republica Moldova.
@@ -11,7 +10,7 @@ mai liberal, totuşi procesul de creare a unei întreprinderi rămâne
 destul de anevoios.
 
 1. Mai întâi de toate trebuie să ne hotărâm în ce domeniu dorim să activăm, să schiţăm un scurt business-plan, și puteţi da start iniţiativei dumneavoastră.
-1. Mergem la link:http://cis.gov.md/[Camera Înregistrării de stat], (link:http://cis.gov.md/content/66[Chişinău str. Ştefan cel Mare 73], tel: 27-73-18) cu un singur document – Buletinul de identitate. Dar, în moment ce doriţi să scrieţi cererea pentru înfiinţare, este bine să aveţi în minte câteva variante pentru Denumirea firmei, şi domeniile de activitate. Conform legislaţiei, la înregistrare puteţi prezenta 5 domenii diferite de activitate, fapt care vă asigură un orizont mai larg în activitatea pe care o veţi desfăşura. În caz că nu reuşiţi într-o direcţie cu siguranţă că veţi reuşi în alta. Ulterior înregistrării veţi putea face modificări şi adăugiri în acest sens. Registrul de stat face verificarea dacă nu aveţi datorii către Inspectoratul Fiscal. Vă va oferi un certificat pentru deschiderea unui cont bancar temporar şi o notă privind data vizitei următoare. Suma necesară care trebuie s-o plătiţi este de 544 pentru un SRL. Procesul de înregistrare durează 5 zile, în caz de urgenţă vă va costa 965 lei. 
+1. Mergem la link:http://cis.gov.md/[Camera Înregistrării de stat], (link:http://cis.gov.md/content/66[Chişinău str. Ştefan cel Mare 73], tel: 27-73-18) cu un singur document – Buletinul de identitate. Dar, în moment ce doriţi să scrieţi cererea pentru înfiinţare, este bine să aveţi în minte câteva variante pentru Denumirea firmei, şi domeniile de activitate. Conform legislaţiei, la înregistrare puteţi prezenta 5 domenii diferite de activitate, fapt care vă asigură un orizont mai larg în activitatea pe care o veţi desfăşura. În caz că nu reuşiţi într-o direcţie cu siguranţă că veţi reuşi în alta. Ulterior înregistrării veţi putea face modificări şi adăugiri în acest sens. Registrul de stat face verificarea dacă nu aveţi datorii către Inspectoratul Fiscal. Vă va oferi un certificat pentru deschiderea unui cont bancar temporar şi o notă privind data vizitei următoare. Suma necesară care trebuie s-o plătiţi este de 544 pentru un SRL. Procesul de înregistrare durează 5 zile, în caz de urgenţă vă va costa 965 lei.
 *Notă:* Dacă puneți adresa juridică la o adresă unde nu aveți viza de reședință, atunci e necesar să prezentați contractul ce confirmă proprietatea. Va fi necesar de făcut o copie la contract și de lăsat la CIS.
 1. Mergem să deschidem contul în bancă. Pentru asta veţi avea nevoie de Buletinul de identitate şi copia acestuia şi desigur certificatul de la Camera Înregistrării de Stat. Scriem o nouă cerere de deschidere a contului şi plătim suma statutară minimă de 5400 lei. Dacă firma are mai mulţi asociaţi(de exemplu aţi implicat în afacere pe un bun prieten care are o experienţă bogată în afaceri), este permis de a investi doar 40 % din suma necesară.
 1. Ne întoarcem la Camera Înregistrării de Stat. Primim pachetul de documente, unde intră Decizia despre înregistrare, extrasul din Registru, certificat de înregistrare, decizia voastră personală de înfiinţare a firmei,(daca sunteţi fondator unic) sau Procesul Verbal al adunării asociaţilor (daca sunteţi mai mulţi fondatori). De obicei actele, precum Statutul firmei, sunt întocmite de lucrătorii Camerei. Pe ultima pagină se descrie pas cu pas unde trebuie să mergeţi pentru a fi luat la evidenţă, unde să duceţi documentele. Pentru orice eventualitate faceţi 5 copii a tuturor documentelor şi un Dosar pentru păstrare, pentru a preveni incomodităţile în caz de pierdere a dosarului.
@@ -30,7 +29,65 @@ licenţe la Camera Licenţiere (Chisinau, bd.Stefan cel Mare şi Sfînt, 124; te
 În rest rămâne etapa cea mai interesantă, activitatea economică propriu-zisă, de care va depinde profitul firmei.
 Vă urăm succes!!!
 
+== Lista de documente ce trebuie de prezentat la diferite instituții
+
+La *biroul național de statistică* pentru a obține *adeverința* de
+confirmare a codurilor statistice vom avea nevoie de:
+
+* copia la certificatul de înregistrare
+* copia extrasului din registru de stat
+
+Pentru a ne înregistra la *inspectoratul fiscal*, prezentăm ștampila
+și copiile la
+
+* certificatul de înregistrare
+* extrasul din registru de stat
+* contract de vânzare/cumpărare sau arendă pentru adresa juridică
+* adeverința de atribuire a codurilor statistice, obținută la BNS.
+* ordinul de angajare a contabilului-șef
+* buletinul contabilului-șef
+* buletinul administratorului
+* decizia privind înregistrarea persoanei juridice, de la CIS
+* decizia fondatorilor, de la CIS
+
+Pentru *agenția teritorială de statistică*, copiile la:
+
+* certificatul de înregistrare
+* extrasul din registru de stat
+* adeverința de atribuire a codurilor statistice, obținută la BNS.
+
+Pentru *Compania Națională de Asigurări Medicale*:
+
+* certificatul de înregistrare
+* copia certificatului de înregistrare
+
+Ne ducem pe adresa indicată mai jos la etajul 3, cerem de la biroul de
+informații blancul pentru persoane juridice, î-l completăm și mergem
+cu documentele, formularul și ștampila în biroul 308. Acolo ne
+eliberează un certificat că am fost luat la evidență. Pentru firmele
+din Chișinău, agenția lucrază de luni până joi. Pe urmă în fiece lună
+până pe data de 7 mergem la ei în biroul 310 cu rapoartele tipărite în
+2 exemplare și pe usb-flash în format electronic.
+
+Pentru *Compania Națională de Asigurări Sociale*:
+
+* copia certificatului de înregistrare
+* copia extrasului din registru de stat
+* certificat de la bancă că aveți cont deschis
+* rechizitele bancare
+* adeverința de atribuire a codurilor statistice, obținută la BNS.
+
+== Adresele instituțiilor
+
+* Inspectoratul fiscal, Chișinău, sec. Centru: str. Varlaam 69. tel:
+82-31-83, biroul 131, http://www.fisc.md
+* Agenția teritorială de statistică, Chișinău, șos. Hâncești, 53a: vizavi de piața
+Docuceaev, tel: 73-95-81, http://www.statistica.md
+* CNA Medicale: Chișinău, Vasile Lupu, 18. Intersecție cu strada de la
+Moldexpo. tel: 59-37-91, http://atchisinau.com.md
+* CNA Sociale: Chișinău, 31 August 1989, 87. tel: 54-85-00, http://www.cnas.md
+
 == Referințe
 
 * link:http://afacerinoi.blogspot.com/[Pașii necesari pentru a deschide o afacere nouă]
-* link:http://www.cis.gov.md/content/71[Înregistrarea persoanelor juridice şi întreprinzătorilor individuali]
+* CIS - link:http://www.cis.gov.md/content/71[Înregistrarea persoanelor juridice şi întreprinzătorilor individuali]
