@@ -22,6 +22,7 @@ Browsers: Chrome, Iceweasel, Konqueror, Opera
 
 * git-buildpackage
 * reprepro
+* lib32nss-mdns - pentru picasa
 * gnupg-agent
 * rar unrar
 * kchmviewer
