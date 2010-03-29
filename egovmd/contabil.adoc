@@ -1,0 +1,18 @@
+= Contabil în Moldova
+
+În acest document voi descrie experiența mea de contabil la firma proprie.
+
+== Prima dispoziție de plată
+
+Ea trebuie ca să transferi capitalul statutar de pe contul provizoriu pe cel current.
+Destinația plății: Transferarea capitalului statutar
+
+Greblele pe care am călcat:
+
+* Data trebuie să fie în format: 29 martie 2010
+* La suma de transfer trebuie folosită liniuța în loc de punct/virgulă, de exemplu: 5400-00
+* Suma cu litere trebuie să încludă și bănuții pe 2 cifre: Cinci mii patru sute lei și 00 bani.
+* Plătitorul și beneficiarul trebuie să aibă (R) în față, dacă e rezident.
+* Trebuie să semnați de două ori dispoziția de plată dacă sunteți și contabil-șef și conducător.
+
+image:images/dispoziție_de_plată_1.jpg[Prima dispoziție de plată]

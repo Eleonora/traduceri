@@ -28,3 +28,5 @@ Browsers: Chrome, Iceweasel, Konqueror, Opera
 * kchmviewer
 * ttf-mscorefonts-installer
 * komprare
+* ntpdate
+* audacious2
