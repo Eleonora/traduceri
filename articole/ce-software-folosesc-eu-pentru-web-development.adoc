@@ -30,3 +30,5 @@ Browsers: Chrome, Iceweasel, Konqueror, Opera
 * komprare
 * ntpdate
 * audacious2
+* openoffice.org-calc
+* openoffice.org-writer
