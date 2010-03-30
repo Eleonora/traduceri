@@ -32,3 +32,5 @@ Browsers: Chrome, Iceweasel, Konqueror, Opera
 * audacious2
 * openoffice.org-calc
 * openoffice.org-writer
+* cups
+* foomatic-db-hpijs - pentru printere HP
