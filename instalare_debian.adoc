@@ -1,0 +1,43 @@
+= Instalarea Debian pas cu pas
+
+Acest ghid vă arată cum să instalați sistemul de operare Debian.
+Întroducem CD or DVD în dispozitiv și ne bootăm de pe CD.
+
+image:images/install/console-keymaps-at_keymap_0.png[Keymap]
+
+image:images/install/localechooser_languagelist_0.png[alegem limba]
+
+image:images/install/netcfg_choose_interface_0.png[alegem interfață rețea]
+
+image:images/install/netcfg_get_domain_0.png[configurarea domenului]
+
+image:images/install/netcfg_get_hostname_0.png[configurarea numelui calculatorului]
+
+image:images/install/partman-auto_automatically_partition_0.png[partman1]
+
+image:images/install/partman-auto_choose_recipe_0.png[partman2]
+
+image:images/install/partman_confirm_0.png[partman confirmarea]
+
+image:images/install/passwd_root-password_0.png[Setează parola pentru root]
+
+image:images/install/passwd_user-fullname_0.png[Numele deplin pentru utilizator]
+
+image:images/install/passwd_user-password_0.png[Parola pentru utilizator]
+
+image:images/install/passwd_username_0.png[username]
+
+image:images/install/tasksel_first_0.png[Selectarea modului de instalare]
+
+image:images/install/mirror_http_hostname_0.png[Selectăm oglinda de
+pachete pe care o vom folosi-o]
+
+image:images/install/grub-installer_with_other_os_0.png[Instalarea grubului]
+
+image:images/install/finish-install_reboot_in_progress_0.png[Restartarea
+calculatorului]
+
+Ne restartăm și savurăm proaspăta instalare Debian.
+
+Adresați întrebări pe http://forum.linux.md, dacă aveți careva probleme
+cu pașii de mai sus. Baftă!
