@@ -54,6 +54,7 @@ Vă mulţumim anticipat pentru susţinere.
 * link:distribuții-linux-iso.html[ISO-uri cu distribuții Linux]
 * link:http://forum.linux.md[Forumuri desre linux].
 * link:http://blog.debian.md[Blog despre debian]
+* link:instalare_debian.html[Instalarea sistemului de operare Debian]
 * link:http://blog.rubyonrails.md[Blog despre rubyonrails și ruby]
 * link:traduceri/[Articole traduse în română]
 * link:articole/[Articole]
