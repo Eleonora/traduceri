@@ -6,3 +6,4 @@
 * 30 Ianuarie 2010, Împărțirea calendarelor Linux 2010, link:http://picasaweb.google.com/vitalie.lazu/2010013002?feat=directlink[poze].
 * 30 Decembrie 2009, Învierea comunității Linux din Moldova, planificarea acțiunilor,link:http://picasaweb.google.com/vitalie.lazu/20091230?feat=directlink[poze].
 * 20 Septembrie 2008, Linux Fest 2008, link:http://picasaweb.google.com/vitalie.lazu/Den?feat=directlink[poze].
+* Poze de la evenimentele mai vechi se păstrează și pe link:http://photo.fedoramd.org/main.php[fedoramd.org]
