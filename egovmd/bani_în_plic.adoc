@@ -21,6 +21,7 @@ Rog să creem o companie de informare și educare a cetățenilor: de
 monitorizat companiile locale de IT.
 
 Sunt careva întrebări pentru fisc:
+
 * Vreau să achit impozitele, dar doresc singur să decid la ce
 instituții de stat să dau banii.
 * O companie străină care nu are oficiu în Moldova, dar are 5-8
