@@ -2,6 +2,14 @@
 
 În acest document voi descrie experiența mea de contabil la firma proprie.
 
+== Raportul  pentru CNAS
+
+Acest raport se prezintă trimestrial până pe data de 15 a următoarei
+luni la oficiul teritorial al Companiei Naționale de Asigurări Sociale.
+Raportul Forma4-BASS se prezintă în două exemplare.
+TODO: cum arată(poză), cum se completează, cum se calculează, latex
+doc to print.
+
 == Blancuri de la editura statistică
 Pentru a obține blancuri în activitatea firmei, trebuie de dat comandă la Editura Statistică, București 34, bir 4.
 Prima dată se prezintă administratorul cu următoarele documente:
