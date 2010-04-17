@@ -1,5 +1,7 @@
 = Articole și traduceri despre Software, Git, Debian, Ruby, Rails
 
+* link:ce-importă-acum.html[Ce importă acum - cartea gratuită a lui
+Seth Godin].
 * link:înlocuieşte-te–un-ghid-pentru-delegarea-volumului-tău-de-muncă.html[Înlocuieşte-te – Un ghid pentru delegarea volumului tău de muncă].
 * link:cum-de-salvat-proiectele-software-calea-toyota.html[Cum de salvat proiectele software: Calea Toyota].
 * link:workrave-si-lucrul-acasa.html[Workrave - ajutorul Nr.1 p-u cei ce lucrează la computer].
