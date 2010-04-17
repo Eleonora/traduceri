@@ -36,3 +36,5 @@ Browsers: Chrome, Iceweasel, Konqueror, Opera
 * foomatic-db-hpijs - pentru printere HP
 * sqlite3 - dev
 * sqlitebrowser - GUI browser for sqlite
+* kdiff3 - merge tool
+* rcconf
