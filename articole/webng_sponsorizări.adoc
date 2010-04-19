@@ -1,0 +1,7 @@
+= Sponsorizări WEB NG în domeniul open-source
+
+* Găzduirea linux.md și forum.linux.md.
+* Oglinda locală debian și debian.md.
+* RubyOnRails.md - găzduirea siteului.
+* Document Freedom Date, 31 martie 2010. 
+

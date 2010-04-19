@@ -38,3 +38,33 @@ Browsers: Chrome, Iceweasel, Konqueror, Opera
 * sqlitebrowser - GUI browser for sqlite
 * kdiff3 - merge tool
 * rcconf
+* openoffice.org-draw
+* inkscape
+* google-chrome-unstable
+vlc
+ffmpeg - debian multimedia.org
+flashplugin-nonfree
+ksnapshot
+
+okular
+gwenview
+digikam
+ark
+pidgin
+locales
+ia32-libs
+ruby1.8-dev
+make
+bzip2
+g++
+apache2-dev
+sudo
+exuberant-ctags
+imagemagick
+kompare
+kate
+mtr
+asciidoc
+rar
+unrar
+
