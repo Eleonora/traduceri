@@ -1,0 +1,3 @@
+= Linkuri Utile
+
+* link:http://ro.www.mozillamessaging.com/ro/[Email client, Thunderbird, ro]

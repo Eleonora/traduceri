@@ -3,9 +3,9 @@
 Acest ghid vă arată cum să instalați sistemul de operare Debian.
 Întroducem CD or DVD în dispozitiv și ne bootăm de pe CD.
 
-image:images/install/console-keymaps-at_keymap_0.png[Keymap]
+image:images/install/localechooser_languagelist_0.png[Alegem limba]
 
-image:images/install/localechooser_languagelist_0.png[alegem limba]
+image:images/install/console-keymaps-at_keymap_0.png[Keymap]
 
 image:images/install/netcfg_choose_interface_0.png[alegem interfață rețea]
 
