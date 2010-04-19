@@ -1,5 +1,6 @@
 = Articole și traduceri despre Software, Git, Debian, Ruby, Rails
 
+* link:13-lucruri-simple-pentru-a-simplifica-ziua-de-muncă.html[13 lucruri simple care îți pot simplifica ziua de muncă].
 * link:ce-importă-acum.html[Ce importă acum - cartea gratuită a lui
 Seth Godin].
 * link:înlocuieşte-te–un-ghid-pentru-delegarea-volumului-tău-de-muncă.html[Înlocuieşte-te – Un ghid pentru delegarea volumului tău de muncă].
@@ -8,4 +9,4 @@ Seth Godin].
 * link:svn-ro.html[Curs fulger Git - SVN].
 * link:everyday-ro.html[20 de comenzi GIT pentru lucrul de zi cu zi].
 
-Dacă doriți să contribuiți cu documentație la acest proiect, scrieți lz@kirsan.md
+Dacă doriți să contribuiți cu documentație la acest proiect, scrieți linux@debian.md
